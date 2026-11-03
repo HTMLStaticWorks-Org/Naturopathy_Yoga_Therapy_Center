@@ -1,0 +1,2 @@
+# Naturopathy_Yoga_Therapy_Center
+Automated website repository for Naturopathy_Yoga_Therapy_Center
