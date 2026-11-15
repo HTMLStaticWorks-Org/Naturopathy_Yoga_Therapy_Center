@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Journey Education | Verdant Life</title>
+  <meta name="description" content="Discover in-depth editorial education on naturopathy, the role of yoga, mindful breathing, balanced nutrition, daily routines, and physiological relaxation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>
+    (function() {
+      if (localStorage.getItem('verdant-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      if (localStorage.getItem('verdant-direction') === 'rtl') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+    <!-- Navigation Header -->
+    <!-- Navigation Header with Home Dropdown -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+        <div class="brand-text">
+          <span class="brand-name">VERDANT LIFE</span>
+          <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" aria-expanded="false">
+              Home
+              <svg class="dropdown-arrow" width="11" height="11" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html" class="dropdown-link">Home 1 (Sanctuary Home)</a></li>
+              <li><a href="home-2.html" class="dropdown-link">Home 2 (Clinical & Retreat)</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="education.html" class="nav-link active">Wellness Journey</a></li>
+          <li><a href="programs.html" class="nav-link">Signature Programs</a></li>
+          <li><a href="facilities.html" class="nav-link">Sanctuary Spaces</a></li>
+          <li><a href="doctors.html" class="nav-link">Specialists</a></li>
+          <li><a href="journal.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <!-- Mobile / Tablet Menu Actions (Below Dashboard Navlink) -->
+          <li class="mobile-menu-actions">
+            <div class="mobile-theme-rtl-row">
+              <button class="icon-btn theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+              <button class="icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="login.html" class="btn btn-primary mobile-login-cta">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle-btn desktop-only-action" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn rtl-toggle-btn desktop-only-action" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm desktop-only-action">Login</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Editorial Hero Banner -->
+  <section class="page-hero" style="background-image: url('images/image-67.png');">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag">Educational Foundation</span>
+        <h1 class="page-hero-title">Understanding Your<br class="hero-line-break">Natural Wellness Journey</h1>
+        <p class="page-hero-desc">
+          True wellness is not an elusive secret; it is an educated, conscious return<br class="hero-line-break">
+          to the natural laws governing human vitality. Explore our comprehensive<br class="hero-line-break">
+          curriculum examining the science, philosophy, and daily practices that<br class="hero-line-break">
+          anchor enduring health throughout life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Lead In -->
+  <section class="section-padding-sm bg-cream">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 2.5rem;">
+        <div style="border-radius: var(--radius-md); overflow: hidden; height: 340px; box-shadow: var(--shadow-sm);">
+          <img src="images/image-9.png" alt="Botanical flat lay of medicinal herbs and glass tinctures" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <span class="section-tag">Holistic Principle</span>
+          <h2>The Healing Power of Nature (Vis Medicatrix Naturae)</h2>
+          <p style="color: var(--text-muted); line-height: 1.8;">
+            In traditional naturopathy, the human body is recognized as an interconnected biological ecosystem capable of continuous self-renewal when obstacles to health are eliminated. Rather than suppressing acute expressions of fatigue or tension, natural therapeutics support the body's physiological recuperative faculties through wholesome nutrition, pure hydration, postural ease, and deep nervous system quietude.
+          </p>
+          <div class="card-benefit" style="margin-top: 1.25rem;">
+            <strong>Core Takeaway:</strong> Wellness thrives when daily lifestyle choices cooperate with, rather than oppose, the body’s innate homeostatic rhythms.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: The 6 Core Educational Topics (Expandable Editorial Layout) -->
+  <section class="section-padding bg-almond">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Core Knowledge Modules</span>
+        <h2 class="section-title">Six Pillars of Everyday Natural Health</h2>
+        <p class="section-subtitle">
+          Click any module to read detailed clinical explanations, historical context, and practical steps you can implement today.
+        </p>
+      </div>
+
+      <div class="grid-6">
+        <!-- Topic 1: Understanding Naturopathy -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-14.png" alt="Naturopathy clinic room with shelves of dried herb jars">
+            <span class="card-media-badge">Topic 01</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Foundational Science</span>
+            <h3 class="card-title">1. Understanding Naturopathy</h3>
+            <p class="card-text">
+              Examine the historical lineage and foundational tenets of naturopathy: First Do No Harm, Treat the Whole Person, and Doctor as Educator.
+            </p>
+            <div class="card-benefit">
+              <strong>User Benefit:</strong> Gain clarity on how drugless, nature-inspired modalities support preventative resilience.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="readArticleModal('Understanding Naturopathy', 'Foundational Science', 'Current Curriculum', 'images/image-14.png', 'Naturopathy is a distinct, federally recognized medical discipline centered on the Vis Medicatrix Naturae (the self-healing power of nature). Developed through centuries of clinical water cures, botanical medicine, and clinical nutrition, modern naturopathy bridges age-old therapeutic modalities with contemporary physiological research. Naturopathic physicians emphasize lifestyle counseling, hydrotherapy, and pelotherapy to support metabolic homeostasis without unnecessary pharmaceutical dependence.')">Read Full Module</button>
+              <a href="services.html#naturopathy" class="btn btn-primary btn-sm">Explore Therapies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 2: The Role of Yoga in Everyday Wellness -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-36.png" alt="Yoga class practicing low lunges in modern glass-walled studio">
+            <span class="card-media-badge">Topic 02</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Somatic Alignment</span>
+            <h3 class="card-title">2. Yoga in Everyday Life</h3>
+            <p class="card-text">
+              Understand why yoga therapy is far more than physical exercise: it is a functional movement and nervous system recalibration practice.
+            </p>
+            <div class="card-benefit">
+              <strong>User Benefit:</strong> Relieves sedentary spine compression, builds joint longevity, and softens emotional holding patterns.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="readArticleModal('The Role of Yoga in Everyday Wellness', 'Somatic Alignment', 'Current Curriculum', 'images/image-36.png', 'In contemporary sedentary environments, musculoskeletal stiffness and shallow breathing frequently become chronic somatic baselines. Therapeutic yoga functions as neuromuscular education: slow, purposeful asanas stimulate proprioceptive sensors in the fascia and joints, increasing synovial fluid circulation while systematically decompressing the spinal column. Practiced consistently, it restores fluid movement, stabilizes autonomic tone, and grounds the mind in calm presence.')">Read Full Module</button>
+              <a href="services.html#yoga" class="btn btn-primary btn-sm">Explore Therapies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 3: Importance of Mindful Breathing -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-7.png" alt="Woman meditating in sun-dappled forest with golden mist">
+            <span class="card-media-badge">Topic 03</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Pranayama Physiology</span>
+            <h3 class="card-title">3. Mindful Breathing</h3>
+            <p class="card-text">
+              Explore how conscious diaphragmatic breathwork directly regulates heart-rate variability (HRV) and activates the vagus nerve.
+            </p>
+            <div class="card-benefit">
+              <strong>User Benefit:</strong> Provides an instantaneous physiological switch to extinguish acute anxiety and mental clutter.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="readArticleModal('Importance of Mindful Breathing', 'Pranayama Physiology', 'Current Curriculum', 'images/image-7.png', 'The respiratory cycle is the sole autonomic function that can be instantly brought under conscious voluntary control. When exhalations are lengthened and deepened into the lower lobes of the lungs, mechanoreceptors signal the vagus nerve to release acetylcholine, naturally reducing cardiac rate and calming vascular tension. Regular pranayama practice cultivates steady mental clarity, enhances respiratory efficiency, and restores visceral peace.')">Read Full Module</button>
+              <a href="services.html#yoga" class="btn btn-primary btn-sm">Explore Therapies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 4: Building Balanced Eating Habits -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-96.png" alt="Rainbow gradient array of fresh raw whole fruits and vegetables">
+            <span class="card-media-badge">Topic 04</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Nutrient Density</span>
+            <h3 class="card-title">4. Balanced Eating Habits</h3>
+            <p class="card-text">
+              Discover the principles of plant-forward, seasonal, and minimally processed nourishment designed to nourish the gut microbiome.
+            </p>
+            <div class="card-benefit">
+              <strong>User Benefit:</strong> Replaces rigid diet culture with intuitive, joyful, and deeply nourishing whole-food habits.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="readArticleModal('Building Balanced Eating Habits', 'Nutrient Density', 'Current Curriculum', 'images/image-96.png', 'Nutritional naturopathy prioritizes food as living cellular information rather than mere isolated calories. Consuming a vibrant spectrum of seasonal produce, fiber-rich legumes, cold-pressed plant fats, and unprocessed grains provides the diverse micronutrient matrix necessary for optimal enzymatic function. Furthermore, adopting mindful eating habits—such as thorough mastication and dining in calm surroundings—dramatically improves gastrointestinal transit and digestive contentment.')">Read Full Module</button>
+              <a href="services.html#nutrition" class="btn btn-primary btn-sm">Explore Therapies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 5: Creating Healthy Daily Routines -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-70.png" alt="Immunity tea ingredients, ginger, lemon, spices on cutting board">
+            <span class="card-media-badge">Topic 05</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Circadian Cadence</span>
+            <h3 class="card-title">5. Healthy Daily Routines</h3>
+            <p class="card-text">
+              Learn how aligning waking times, hydration, meal windows, and digital boundaries with natural daylight stabilizes hormone production.
+            </p>
+            <div class="card-benefit">
+              <strong>User Benefit:</strong> Eliminates morning sluggishness and promotes natural sleepiness at night.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="readArticleModal('Creating Healthy Daily Routines', 'Circadian Cadence', 'Current Curriculum', 'images/image-70.png', 'Human biological clocks (circadian pacemakers) are tightly entrained to solar cues. Establishing a consistent daily routine (Dinacharya) synchronizes cortisol and melatonin secretion curves: early morning light exposure prompts alert wakefulness, mid-day dining coincides with peak digestive enzyme secretion, and evening digital sunsets allow melatonin to rise smoothly, fostering deep restorative sleep without pharmaceutical sedatives.')">Read Full Module</button>
+              <a href="services.html#nutrition" class="btn btn-primary btn-sm">Explore Therapies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic 6: Understanding Relaxation and Recovery -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-44.png" alt="Restorative yoga therapy with supportive bolsters and gentle alignment">
+            <span class="card-media-badge">Topic 06</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Neuro-Somatic Reset</span>
+            <h3 class="card-title">6. Relaxation & Recovery</h3>
+            <p class="card-text">
+              Delve into the distinction between passive collapse (scrolling on devices) versus true physiological down-regulation and somatic rest.
+            </p>
+            <div class="card-benefit">
+              <strong>User Benefit:</strong> Teaches your nervous system how to safely exit fight-or-flight states into regenerative healing.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="readArticleModal('Understanding Relaxation and Recovery', 'Neuro-Somatic Reset', 'Current Curriculum', 'images/image-44.png', 'True physiological relaxation is an active metabolic state where parasympathetic dominance facilitates cellular DNA repair, glycogen resynthesis, and immune optimization. Engaging in supported restorative yoga postures, thermal mineral baths, and guided sensory silence down-regulates adrenal output, allowing the cardiovascular and nervous systems to recover from chronic environmental hyper-stimulation.')">Read Full Module</button>
+              <a href="services.html#mind-body" class="btn btn-primary btn-sm">Explore Therapies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive Research Spotlights (3D Fanned Deck Showcase) -->
+  <section class="section-padding bg-cream" id="clinical-explorations">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Clinical Explorations</span>
+        <h2 class="section-title">In-Depth Editorial Spotlights</h2>
+        <p class="section-subtitle">
+          Expanding your understanding through clinical studies, botanical heritage, and experiential nature-cure principles.
+        </p>
+      </div>
+
+      <div class="fanned-deck-wrapper">
+        <!-- 3D Fanned Deck Stage (Click any side card to rotate to center) -->
+        <div class="fanned-deck-stage" id="fannedDeckStage" aria-label="Clinical Explorations 3D Fanned Showcase">
+          <!-- 01: Botanical Alchemy -->
+          <div class="fanned-card" data-index="0" data-pos="0" onclick="goToFannedSlide(0)" title="Click to view Botanical Alchemy">
+            <div class="fanned-card-media">
+              <img src="images/image-64.png" alt="Naturopathic apothecary jars with dried flowers and stone mortar pestle">
+            </div>
+            <span class="fanned-card-badge">Botanical Alchemy</span>
+            <div class="fanned-card-overlay">
+              <span class="fanned-card-meta">Herbal Formulations • 01 / 05</span>
+              <h3 class="fanned-card-title">Botanical Infusions</h3>
+              <p class="fanned-card-subtitle">Bioactive Phytochemicals & Water Extraction Kinetics</p>
+              <div class="fanned-card-insight">
+                <strong>Insight:</strong> Water decoctions retain fragile aromatic monoterpenes.
+              </div>
+              <div class="fanned-card-actions">
+                <button class="fanned-card-btn" onclick="event.stopPropagation(); viewSpotlightDetails(0)">Explore Spotlight →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02: Circadian Rhythms -->
+          <div class="fanned-card" data-index="1" data-pos="1" onclick="goToFannedSlide(1)" title="Click to view Circadian Rhythms">
+            <div class="fanned-card-media">
+              <img src="images/image-45.png" alt="Woman meditating on mountain hillside at sunrise">
+            </div>
+            <span class="fanned-card-badge">Circadian Rhythms</span>
+            <div class="fanned-card-overlay">
+              <span class="fanned-card-meta">Dawn Exposure • 02 / 05</span>
+              <h3 class="fanned-card-title">Circadian Alignment</h3>
+              <p class="fanned-card-subtitle">Morning Lux & Retinal Ganglion Signaling</p>
+              <div class="fanned-card-insight">
+                <strong>Insight:</strong> Zero-cost protocol for regulating slow-wave sleep architecture.
+              </div>
+              <div class="fanned-card-actions">
+                <button class="fanned-card-btn" onclick="event.stopPropagation(); viewSpotlightDetails(1)">Explore Spotlight →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03: Ethical Herbology -->
+          <div class="fanned-card" data-index="2" data-pos="2" onclick="goToFannedSlide(2)" title="Click to view Ethical Herbology">
+            <div class="fanned-card-media">
+              <img src="images/image-66.png" alt="Hands holding fresh green medicinal herbs">
+            </div>
+            <span class="fanned-card-badge">Sanctuary Garden</span>
+            <div class="fanned-card-overlay">
+              <span class="fanned-card-meta">Ethical Sourcing • 03 / 05</span>
+              <h3 class="fanned-card-title">Herb Harvesting</h3>
+              <p class="fanned-card-subtitle">Dew-Point Potency & Living Cellular Vitality</p>
+              <div class="fanned-card-insight">
+                <strong>Insight:</strong> Up to 42% higher essential oil retention in dew harvests.
+              </div>
+              <div class="fanned-card-actions">
+                <button class="fanned-card-btn" onclick="event.stopPropagation(); viewSpotlightDetails(2)">Explore Spotlight →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04: Shinrin-Yoku -->
+          <div class="fanned-card" data-index="3" data-pos="-2" onclick="goToFannedSlide(3)" title="Click to view Shinrin-Yoku">
+            <div class="fanned-card-media">
+              <img src="images/image-24.png" alt="Mindful walking path through flowers and trees">
+            </div>
+            <span class="fanned-card-badge">Shinrin-Yoku</span>
+            <div class="fanned-card-overlay">
+              <span class="fanned-card-meta">Sensory Immersion • 04 / 05</span>
+              <h3 class="fanned-card-title">Forest Bathing</h3>
+              <p class="fanned-card-subtitle">Phytoncide Inhalation & Vagal Tone Calibration</p>
+              <div class="fanned-card-insight">
+                <strong>Insight:</strong> Inhaling tree terpenes modulates autonomic nervous resilience.
+              </div>
+              <div class="fanned-card-actions">
+                <button class="fanned-card-btn" onclick="event.stopPropagation(); viewSpotlightDetails(3)">Explore Spotlight →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05: Hydrothermal Physics -->
+          <div class="fanned-card" data-index="4" data-pos="-1" onclick="goToFannedSlide(4)" title="Click to view Hydrothermal Physics">
+            <div class="fanned-card-media">
+              <img src="images/image-55.png" alt="Hydrotherapy bathtub with underwater jet hose massage">
+            </div>
+            <span class="fanned-card-badge">Thermal Balneology</span>
+            <div class="fanned-card-overlay">
+              <span class="fanned-card-meta">Hydrothermal Physics • 05 / 05</span>
+              <h3 class="fanned-card-title">Hydrothermal Flow</h3>
+              <p class="fanned-card-subtitle">Hydrostatic Buoyancy & Venous Decompression</p>
+              <div class="fanned-card-insight">
+                <strong>Insight:</strong> 90% bodyweight buoyancy relieving joint compression forces.
+              </div>
+              <div class="fanned-card-actions">
+                <button class="fanned-card-btn" onclick="event.stopPropagation(); viewSpotlightDetails(4)">Explore Spotlight →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrated Navigation System (No Arrow Buttons) -->
+        <!-- 1. Interactive Timeline Scrubber & Counter Bar -->
+        <div class="fanned-timeline-bar">
+          <div class="fanned-counter" id="fannedCounterText">
+            Spotlight <strong>01</strong> of <strong>05</strong>
+          </div>
+          <div class="fanned-scrubber-track" onclick="handleScrubberClick(event)" title="Click along timeline to navigate">
+            <div class="fanned-scrubber-progress" id="fannedProgress"></div>
+            <div class="fanned-scrubber-points">
+              <span class="fanned-point active" onclick="event.stopPropagation(); goToFannedSlide(0)" title="Spotlight 01"></span>
+              <span class="fanned-point" onclick="event.stopPropagation(); goToFannedSlide(1)" title="Spotlight 02"></span>
+              <span class="fanned-point" onclick="event.stopPropagation(); goToFannedSlide(2)" title="Spotlight 03"></span>
+              <span class="fanned-point" onclick="event.stopPropagation(); goToFannedSlide(3)" title="Spotlight 04"></span>
+              <span class="fanned-point" onclick="event.stopPropagation(); goToFannedSlide(4)" title="Spotlight 05"></span>
+            </div>
+          </div>
+          <button class="fanned-autoplay-btn" id="fannedPlayBtn" onclick="toggleFannedAutoPlay()" aria-label="Toggle Autoplay">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Live Flow</span>
+          </button>
+        </div>
+
+        <!-- 2. Segmented Milestone Pill Tabs Deck -->
+        <div class="fanned-control-dock" role="tablist" aria-label="Spotlight Milestone Tabs">
+          <button class="fanned-milestone-pill active" onclick="goToFannedSlide(0)" role="tab" aria-selected="true">
+            <span class="pill-num">01</span>
+            <span class="pill-title">Botanical Alchemy</span>
+            <span class="pill-dot"></span>
+          </button>
+          <button class="fanned-milestone-pill" onclick="goToFannedSlide(1)" role="tab" aria-selected="false">
+            <span class="pill-num">02</span>
+            <span class="pill-title">Circadian Rhythms</span>
+            <span class="pill-dot"></span>
+          </button>
+          <button class="fanned-milestone-pill" onclick="goToFannedSlide(2)" role="tab" aria-selected="false">
+            <span class="pill-num">03</span>
+            <span class="pill-title">Sanctuary Garden</span>
+            <span class="pill-dot"></span>
+          </button>
+          <button class="fanned-milestone-pill" onclick="goToFannedSlide(3)" role="tab" aria-selected="false">
+            <span class="pill-num">04</span>
+            <span class="pill-title">Shinrin-Yoku</span>
+            <span class="pill-dot"></span>
+          </button>
+          <button class="fanned-milestone-pill" onclick="goToFannedSlide(4)" role="tab" aria-selected="false">
+            <span class="pill-num">05</span>
+            <span class="pill-title">Thermal Balneology</span>
+            <span class="pill-dot"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary Editorial Feature (2 Even-Numbered Cards) -->
+  <section class="section-padding bg-almond">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 2rem;">
+        <div class="card">
+          <div class="card-media" style="height: 260px;">
+            <img src="images/image-69.png" alt="Close-up of fresh green aromatic herbs on timber">
+          </div>
+          <div class="card-body">
+            <span class="section-tag">Aromatherapeutics</span>
+            <h3>Volatile Terpenes in Healing</h3>
+            <p class="card-text">
+              Rosemary, spearmint, and broad-leaf sage contain volatile monoterpenes that gently cross the blood-brain barrier via olfactory pathways, inducing alert calm without neurological agitation.
+            </p>
+            <a href="journal.html" class="btn btn-secondary btn-sm" style="width: fit-content;">Read Botanical Notes →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-media" style="height: 260px;">
+            <img src="images/image-63.png" alt="Diverse culinary and medicinal herbs flat lay on dark wood">
+          </div>
+          <div class="card-body">
+            <span class="section-tag">Botanical Pharmacy</span>
+            <h3>From Garden to Treatment Room</h3>
+            <p class="card-text">
+              Every botanical tincture, steam bath infusion, and culinary garnish used at Verdant Life originates from carefully vetted organic growers or our on-site biodynamic gardens.
+            </p>
+            <a href="facilities.html" class="btn btn-secondary btn-sm" style="width: fit-content;">Explore Our Gardens →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+            <div class="brand-text">
+              <span class="brand-name">VERDANT LIFE</span>
+              <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+            </div>
+          </div>
+          <p class="footer-description">
+            A sanctuary dedicated to nature-inspired clinical wellness, classical yoga therapeutics, and sustainable holistic lifestyle guidance.
+          </p>
+          <!-- Sanctuary Social Media Channels -->
+          <div class="footer-social-links" aria-label="Sanctuary Social Media Channels">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Instagram" title="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Facebook" title="Connect on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on YouTube" title="Watch on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on LinkedIn" title="Follow our Clinical Board on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on X" title="Follow us on X">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Therapies</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#yoga">Therapeutic Yoga</a></li>
+            <li><a href="services.html#naturopathy">Naturopathy Treatments</a></li>
+            <li><a href="services.html#nutrition">Nutrition & Lifestyle</a></li>
+            <li><a href="services.html#mind-body">Mind & Body Wellness</a></li>
+            <li><a href="programs.html">Signature Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Patient Resources</h4>
+          <ul class="footer-links">
+            <li><a href="education.html">Wellness Journey Education</a></li>
+            <li><a href="doctors.html">Our Specialist Team</a></li>
+            <li><a href="facilities.html">Sanctuary Spaces</a></li>
+            <li><a href="journal.html">Wellness Journal</a></li>
+            <li><a href="dashboard.html">Patient Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visiting & Contact</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Request Consultation</a></li>
+            <li><a href="contact.html#hours">Visiting Hours</a></li>
+            <li><a href="contact.html#location">Sanctuary Directions</a></li>
+            <li><a href="about.html">About Our Heritage</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Verdant Life Naturopathy & Yoga Therapy Center. All rights reserved.</div>
+        <div>Natural Living • Authentic Compassion • Professional Guidance</div>
+      </div>
+
+      <div class="footer-disclaimer-notice">
+        <strong>Medical Disclaimer:</strong> The therapies, lifestyle programs, educational articles, and consultation suggestions provided by Verdant Life Naturopathy & Yoga Therapy Center are intended for general holistic wellbeing, relaxation, and lifestyle enhancement. They do not claim to diagnose, cure, mitigate, or guarantee clinical outcomes for medical conditions.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Modal Container -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title" style="margin: 0; font-size: 1.3rem;">Modal Header</h3>
+        <button class="modal-close" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="modal-body-content" class="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <!-- Drop to Top Button with Hover Effect -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Scroll to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
+

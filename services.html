@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapy Catalog | Verdant Life Naturopathy & Yoga Therapy Center</title>
+  <meta name="description" content="Explore our complete catalog of therapeutic yoga, naturopathy treatments, nutrition guidance, and mind-body wellness practices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>
+    (function() {
+      if (localStorage.getItem('verdant-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      if (localStorage.getItem('verdant-direction') === 'rtl') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+    <!-- Navigation Header -->
+    <!-- Navigation Header with Home Dropdown -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+        <div class="brand-text">
+          <span class="brand-name">VERDANT LIFE</span>
+          <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" aria-expanded="false">
+              Home
+              <svg class="dropdown-arrow" width="11" height="11" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html" class="dropdown-link">Home 1 (Sanctuary Home)</a></li>
+              <li><a href="home-2.html" class="dropdown-link">Home 2 (Clinical & Retreat)</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="education.html" class="nav-link">Wellness Journey</a></li>
+          <li><a href="programs.html" class="nav-link">Signature Programs</a></li>
+          <li><a href="facilities.html" class="nav-link">Sanctuary Spaces</a></li>
+          <li><a href="doctors.html" class="nav-link">Specialists</a></li>
+          <li><a href="journal.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <!-- Mobile / Tablet Menu Actions (Below Dashboard Navlink) -->
+          <li class="mobile-menu-actions">
+            <div class="mobile-theme-rtl-row">
+              <button class="icon-btn theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+              <button class="icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="login.html" class="btn btn-primary mobile-login-cta">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle-btn desktop-only-action" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn rtl-toggle-btn desktop-only-action" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm desktop-only-action">Login</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-hero" style="background-image: url('images/image-35.png');">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag">Clinical & Holistic Catalog</span>
+        <h1 class="page-hero-title">Comprehensive <br class="hero-line-break">Natural Therapies</h1>
+        <p class="page-hero-desc">
+          Every therapy at Verdant Life is grounded in traditional healing wisdom <br class="hero-line-break">
+          and guided by certified naturopathic clinicians. Select any therapy <br class="hero-line-break">
+          below to review its complete 10-point presentation, preparation <br class="hero-line-break">
+          guidelines, and consultation details.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Category Jump Navigation -->
+  <nav class="therapy-nav-bar-section" aria-label="Therapy Categories Navigation">
+    <div class="container">
+      <div class="therapy-banner-pills">
+        <a href="#yoga" class="btn btn-secondary btn-sm">Therapeutic Yoga</a>
+        <a href="#naturopathy" class="btn btn-secondary btn-sm">Naturopathy Treatments</a>
+        <a href="#nutrition" class="btn btn-secondary btn-sm">Nutrition & Lifestyle</a>
+        <a href="#mind-body" class="btn btn-secondary btn-sm">Mind & Body</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CATEGORY 1: Therapeutic Yoga (6 items) -->
+  <section id="yoga" class="section-padding bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Category 01</span>
+        <h2 class="section-title">Therapeutic Yoga</h2>
+        <p class="section-subtitle">
+          Individualized, medically attuned yoga practices that restore physical alignment, relieve joint strain, and cultivate breath-anchored mindfulness.
+        </p>
+      </div>
+
+      <div class="grid-6">
+        <!-- 1. Hatha Yoga -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-34.png" alt="Dynamic group yoga Warrior I pose in sunlit hall">
+            <span class="card-media-badge">Postural Alignment</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Asana & Stability</span>
+            <h3 class="card-title">Hatha Yoga</h3>
+            <p class="card-text">Classical deliberate physical postures held with steady breath awareness to cultivate somatic strength, spinal resilience, and centered poise.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Improves joint range of motion, enhances muscle balance, and stabilizes balance.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('hatha-yoga')">10-Point Details</button>
+              <a href="contact.html?therapy=Hatha%20Yoga" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Restorative Yoga -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-33.png" alt="Supported restorative supine twist with purple blocks">
+            <span class="card-media-badge">Nervous Reset</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Supported Rest</span>
+            <h3 class="card-title">Restorative Yoga</h3>
+            <p class="card-text">Fully propped passive postures held for extended intervals, enabling deep release of chronic muscular tension and autonomic relaxation.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Down-regulates sympathetic stress responses, calms mental fatigue, and aids sleep.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('restorative-yoga')">10-Point Details</button>
+              <a href="contact.html?therapy=Restorative%20Yoga" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Gentle Yoga -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-43.png" alt="Assisted gentle Child's Pose guidance on purple mat">
+            <span class="card-media-badge">Accessible Mobility</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Low Impact</span>
+            <h3 class="card-title">Gentle Yoga</h3>
+            <p class="card-text">Unrushed movements and supported floor stretches tailored for beginners, seniors, or those re-entering physical activity after fatigue.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Nurtures spinal fluidity, increases circulation gently, and relieves morning stiffness.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('hatha-yoga')">10-Point Details</button>
+              <a href="contact.html?therapy=Gentle%20Yoga" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Breathing Practices -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-48.png" alt="Pranayama breathwork with crystal singing bowls">
+            <span class="card-media-badge">Pranayama</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Respiratory Control</span>
+            <h3 class="card-title">Breathing Practices</h3>
+            <p class="card-text">Structured yogic pranayama techniques including diaphragm expansion, alternate nostril cadence (Nadi Shodhana), and cooling breaths.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Enhances vital oxygenation, calms rapid pulse rates, and clears mental fog.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('hatha-yoga')">10-Point Details</button>
+              <a href="contact.html?therapy=Breathing%20Practices" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Guided Meditation -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-46.png" alt="Guided group meditation circle with floor cushions">
+            <span class="card-media-badge">Mental Stillness</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Mindfulness</span>
+            <h3 class="card-title">Guided Meditation</h3>
+            <p class="card-text">Focused contemplative sessions leading practitioners through sensory awareness, gratitude cultivation, and somatic body scans.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Fosters emotional equilibrium, enhances concentration, and mitigates reactivity.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('guided-relaxation')">10-Point Details</button>
+              <a href="contact.html?therapy=Guided%20Meditation" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Mindful Movement -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-29.png" alt="Private yoga therapy modified warrior pose">
+            <span class="card-media-badge">Somatic Flow</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Neuromuscular</span>
+            <h3 class="card-title">Mindful Movement</h3>
+            <p class="card-text">Therapeutic somatic sequencing bridging physical therapy principles and classical yoga postures for conscious neuromuscular relearning.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Retrains faulty gait habits, eases repetitive strain, and restores postural symmetry.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('hatha-yoga')">10-Point Details</button>
+              <a href="contact.html?therapy=Mindful%20Movement" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY 2: Naturopathy Treatments (6 items) -->
+  <section id="naturopathy" class="section-padding bg-almond">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Category 02</span>
+        <h2 class="section-title">Naturopathy Treatments</h2>
+        <p class="section-subtitle">
+          Classical nature-cure modalities utilizing elemental hydrotherapy, purified mineral mud, and traditional thermal therapies to nurture physiological vitality.
+        </p>
+      </div>
+
+      <div class="naturopathy-slider-wrapper">
+        <!-- Floating circular navigation arrow buttons -->
+        <button class="nat-nav-btn nat-prev-btn" onclick="prevNatSlide()" aria-label="Previous Treatment">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="nat-nav-btn nat-next-btn" onclick="nextNatSlide()" aria-label="Next Treatment">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="naturopathy-slider-track">
+          <!-- 01. Hydrotherapy -->
+          <div class="naturopathy-slide-card active" data-index="0">
+            <div class="nat-slide-media">
+              <img src="images/image-55.png" alt="Hydrotherapy bathtub with underwater jet hose massage">
+              <span class="nat-slide-badge">Water Therapy</span>
+            </div>
+            <div class="nat-slide-content">
+              <span class="nat-slide-meta">Thermal Balneology • 01 / 06</span>
+              <h3 class="nat-slide-title">Hydrotherapy</h3>
+              <p class="nat-slide-desc">
+                Application of temperature-controlled mineral water and underwater gentle jets to stimulate microcirculation and ease muscular soreness.
+              </p>
+              <div class="nat-slide-benefit">
+                <strong>Benefit:</strong> Relieves joint pressure through natural buoyancy and invigorates venous return.
+              </div>
+              <div class="nat-slide-actions">
+                <button class="nat-btn-explore" onclick="viewTherapyDetails('hydrotherapy')">Explore →</button>
+                <a href="contact.html?therapy=Hydrotherapy" class="nat-btn-enquire">Enquire Now →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02. Mud Therapy -->
+          <div class="naturopathy-slide-card" data-index="1">
+            <div class="nat-slide-media">
+              <img src="images/image-58.png" alt="Natural healing mud pack application poolside">
+              <span class="nat-slide-badge">Pelotherapy</span>
+            </div>
+            <div class="nat-slide-content">
+              <span class="nat-slide-meta">Earth Element • 02 / 06</span>
+              <h3 class="nat-slide-title">Mud Therapy</h3>
+              <p class="nat-slide-desc">
+                Application of clean, sun-energized mineral clay packs along the back, abdomen, or joints to gently draw off internal heat and soothe tissues.
+              </p>
+              <div class="nat-slide-benefit">
+                <strong>Benefit:</strong> Delivers cooling tissue comfort, aids digestive relaxation, and grounds tension.
+              </div>
+              <div class="nat-slide-actions">
+                <button class="nat-btn-explore" onclick="viewTherapyDetails('mud-therapy')">Explore →</button>
+                <a href="contact.html?therapy=Mud%20Therapy" class="nat-btn-enquire">Enquire Now →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03. Natural Body Treatments -->
+          <div class="naturopathy-slide-card" data-index="2">
+            <div class="nat-slide-media">
+              <img src="images/image-56.png" alt="Therapist pouring warm herbal massage oil on client back">
+              <span class="nat-slide-badge">Herbal Touch</span>
+            </div>
+            <div class="nat-slide-content">
+              <span class="nat-slide-meta">Abhyanga & Oils • 03 / 06</span>
+              <h3 class="nat-slide-title">Natural Body Treatments</h3>
+              <p class="nat-slide-desc">
+                Traditional rhythmic warm herbal oil massages and botanical poultice compresses formulated to nourish skin tissues and soothe stiffness.
+              </p>
+              <div class="nat-slide-benefit">
+                <strong>Benefit:</strong> Promotes lymphatic drainage, deeply moisturizes skin, and loosens tight fascia.
+              </div>
+              <div class="nat-slide-actions">
+                <button class="nat-btn-explore" onclick="viewTherapyDetails('restorative-yoga')">Explore →</button>
+                <a href="contact.html?therapy=Natural%20Body%20Treatments" class="nat-btn-enquire">Enquire Now →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04. Relaxation Therapy -->
+          <div class="naturopathy-slide-card" data-index="3">
+            <div class="nat-slide-media">
+              <img src="images/image-61.png" alt="Traditional wooden full-body herbal steam bed Swedana">
+              <span class="nat-slide-badge">Herbal Steam</span>
+            </div>
+            <div class="nat-slide-content">
+              <span class="nat-slide-meta">Swedana Therapy • 04 / 06</span>
+              <h3 class="nat-slide-title">Relaxation Therapy</h3>
+              <p class="nat-slide-desc">
+                Herbalized gentle steam chamber therapy (Swedana) that warms peripheral tissues while keeping the head cool, opening cutaneous pores.
+              </p>
+              <div class="nat-slide-benefit">
+                <strong>Benefit:</strong> Encourages natural skin perspiration, softens taut muscles, and imparts total ease.
+              </div>
+              <div class="nat-slide-actions">
+                <button class="nat-btn-explore" onclick="viewTherapyDetails('restorative-yoga')">Explore →</button>
+                <a href="contact.html?therapy=Relaxation%20Therapy" class="nat-btn-enquire">Enquire Now →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05. Nature-Based Practices -->
+          <div class="naturopathy-slide-card" data-index="4">
+            <div class="nat-slide-media">
+              <img src="images/image-102.png" alt="Outdoor reflexology pebble walking path with handrails">
+              <span class="nat-slide-badge">Sensory Walking</span>
+            </div>
+            <div class="nat-slide-content">
+              <span class="nat-slide-meta">Grounding Reflexology • 05 / 06</span>
+              <h3 class="nat-slide-title">Nature-Based Practices</h3>
+              <p class="nat-slide-desc">
+                Sensory barefoot trails across curated smooth river stones, outdoor sunbaths, and fresh-air prana walks in our shaded botanical grove.
+              </p>
+              <div class="nat-slide-benefit">
+                <strong>Benefit:</strong> Stimulates plantar reflex zones, improves tactile sensory awareness, and grounds anxiety.
+              </div>
+              <div class="nat-slide-actions">
+                <button class="nat-btn-explore" onclick="viewTherapyDetails('mud-therapy')">Explore →</button>
+                <a href="contact.html?therapy=Nature%20Based%20Practices" class="nat-btn-enquire">Enquire Now →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06. Therapeutic Clay Treatment -->
+          <div class="naturopathy-slide-card" data-index="5">
+            <div class="nat-slide-media">
+              <img src="images/image-62.png" alt="Therapist applying detox mud paste in outdoor naturopathy pavilion">
+              <span class="nat-slide-badge">Pavilion Therapy</span>
+            </div>
+            <div class="nat-slide-content">
+              <span class="nat-slide-meta">Open-Air Treatment • 06 / 06</span>
+              <h3 class="nat-slide-title">Therapeutic Clay Treatment</h3>
+              <p class="nat-slide-desc">
+                Full-body natural clay applications conducted in tranquil open-air treatment pavilions followed by warm solar water cleansing.
+              </p>
+              <div class="nat-slide-benefit">
+                <strong>Benefit:</strong> Encourages cutaneous heat dissipation and leaves skin thoroughly invigorated.
+              </div>
+              <div class="nat-slide-actions">
+                <button class="nat-btn-explore" onclick="viewTherapyDetails('mud-therapy')">Explore →</button>
+                <a href="contact.html?therapy=Clay%20Treatment" class="nat-btn-enquire">Enquire Now →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dot Pagination -->
+        <div class="nat-slider-dots">
+          <button class="nat-dot active" onclick="goToNatSlide(0)" aria-label="Hydrotherapy"></button>
+          <button class="nat-dot" onclick="goToNatSlide(1)" aria-label="Mud Therapy"></button>
+          <button class="nat-dot" onclick="goToNatSlide(2)" aria-label="Natural Body Treatments"></button>
+          <button class="nat-dot" onclick="goToNatSlide(3)" aria-label="Relaxation Therapy"></button>
+          <button class="nat-dot" onclick="goToNatSlide(4)" aria-label="Nature-Based Practices"></button>
+          <button class="nat-dot" onclick="goToNatSlide(5)" aria-label="Therapeutic Clay Treatment"></button>
+        </div>
+
+        <!-- Interactive Treatment Thumbnail Chips Grid -->
+        <div class="nat-chips-grid">
+          <div class="nat-chip-card active" onclick="goToNatSlide(0)">
+            <div class="nat-chip-thumb">
+              <img src="images/image-55.png" alt="Hydrotherapy bathtub">
+            </div>
+            <div class="nat-chip-info">
+              <span class="nat-chip-meta">01 • Water</span>
+              <h5 class="nat-chip-title">Hydrotherapy</h5>
+            </div>
+          </div>
+
+          <div class="nat-chip-card" onclick="goToNatSlide(1)">
+            <div class="nat-chip-thumb">
+              <img src="images/image-58.png" alt="Healing mud pack poolside">
+            </div>
+            <div class="nat-chip-info">
+              <span class="nat-chip-meta">02 • Earth</span>
+              <h5 class="nat-chip-title">Mud Therapy</h5>
+            </div>
+          </div>
+
+          <div class="nat-chip-card" onclick="goToNatSlide(2)">
+            <div class="nat-chip-thumb">
+              <img src="images/image-56.png" alt="Herbal massage oil">
+            </div>
+            <div class="nat-chip-info">
+              <span class="nat-chip-meta">03 • Touch</span>
+              <h5 class="nat-chip-title">Body Treatments</h5>
+            </div>
+          </div>
+
+          <div class="nat-chip-card" onclick="goToNatSlide(3)">
+            <div class="nat-chip-thumb">
+              <img src="images/image-61.png" alt="Herbal steam bed Swedana">
+            </div>
+            <div class="nat-chip-info">
+              <span class="nat-chip-meta">04 • Steam</span>
+              <h5 class="nat-chip-title">Relaxation Therapy</h5>
+            </div>
+          </div>
+
+          <div class="nat-chip-card" onclick="goToNatSlide(4)">
+            <div class="nat-chip-thumb">
+              <img src="images/image-102.png" alt="Reflexology pebble walking path">
+            </div>
+            <div class="nat-chip-info">
+              <span class="nat-chip-meta">05 • Grounding</span>
+              <h5 class="nat-chip-title">Nature Practices</h5>
+            </div>
+          </div>
+
+          <div class="nat-chip-card" onclick="goToNatSlide(5)">
+            <div class="nat-chip-thumb">
+              <img src="images/image-62.png" alt="Clay paste in naturopathy pavilion">
+            </div>
+            <div class="nat-chip-info">
+              <span class="nat-chip-meta">06 • Pavilion</span>
+              <h5 class="nat-chip-title">Clay Treatment</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY 3: Nutrition & Lifestyle (6 items) -->
+  <section id="nutrition" class="section-padding bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Category 03</span>
+        <h2 class="section-title">Nutrition & Lifestyle Guidance</h2>
+        <p class="section-subtitle">
+          Sustainable whole-food dietary education, circadian rhythm alignment, and practical lifestyle habits to nourish everyday vitality without extreme restrictions.
+        </p>
+      </div>
+
+      <div class="grid-6">
+        <!-- 13. Personalized Nutrition Guidance -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-22.png" alt="Nutrition specialist at desk with clinical supplements">
+            <span class="card-media-badge">1-on-1 Guidance</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Personalized Care</span>
+            <h3 class="card-title">Nutrition Guidance</h3>
+            <p class="card-text">Individualized dietary roadmaps crafted by naturopathic nutritionists to address meal schedules, nutrient density, and digestive comfort.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Establishes steady daytime energy and removes food guilt with clear practical meal planning.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('nutrition-guidance')">10-Point Details</button>
+              <a href="contact.html?therapy=Nutrition%20Guidance" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Healthy Eating Education -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-91.png" alt="Flat lay of fresh organic rainbow produce and vegetables">
+            <span class="card-media-badge">Plant Nutrition</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Whole Foods</span>
+            <h3 class="card-title">Healthy Eating Education</h3>
+            <p class="card-text">Interactive culinary workshops demonstrating how to select antioxidant-dense rainbow produce, understand food synergy, and avoid hyper-processed foods.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Equips you with lifelong grocery wisdom, kitchen confidence, and wholesome recipes.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('nutrition-guidance')">10-Point Details</button>
+              <a href="contact.html?therapy=Healthy%20Eating%20Education" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. Lifestyle Consultation -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-16.png" alt="Integrative doctor consultation at wooden desk with herbal bottle">
+            <span class="card-media-badge">Habit Design</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Integrative Habit Plan</span>
+            <h3 class="card-title">Lifestyle Consultation</h3>
+            <p class="card-text">In-depth evaluations of your work cadence, screen exposure, sleep habits, and stress factors to engineer sustainable daily lifestyle boundaries.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Fosters restorative sleep rhythms and creates sustainable pacing in high-pressure careers.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('nutrition-guidance')">10-Point Details</button>
+              <a href="contact.html?therapy=Lifestyle%20Consultation" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. Daily Wellness Routines -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-98.png" alt="Pantry staples with legumes, seeds, avocado and grains">
+            <span class="card-media-badge">Daily Cadence</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Dinacharya Wisdom</span>
+            <h3 class="card-title">Daily Wellness Routines</h3>
+            <p class="card-text">Structuring morning wakeful rituals, mindful hydration, mid-day digestive pauses, and evening digital sunsets for steady circadian vitality.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Eliminates decision fatigue and builds effortless consistency into everyday wellness.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('nutrition-guidance')">10-Point Details</button>
+              <a href="contact.html?therapy=Daily%20Wellness%20Routines" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17. Mindful Eating Practices -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-92.png" alt="Traditional Sattvic meal platter in clay bowls on banana leaf">
+            <span class="card-media-badge">Sattvic Dining</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Conscious Nourishment</span>
+            <h3 class="card-title">Mindful Eating Practices</h3>
+            <p class="card-text">Experiential dining sessions exploring mastication awareness, sensory appreciation, and eating in calm environments to optimize digestive enzymes.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Reduces post-meal bloating, increases satisfaction, and transforms your relationship with meals.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('nutrition-guidance')">10-Point Details</button>
+              <a href="contact.html?therapy=Mindful%20Eating" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18. Whole-Food Detox Support -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-97.png" alt="Two glass mason jars with fresh green detox smoothies and citrus">
+            <span class="card-media-badge">Hydration & Greens</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Cold-Pressed Support</span>
+            <h3 class="card-title">Antioxidant Nutrition</h3>
+            <p class="card-text">Gentle vegetable infusions, hydrating cold-pressed greens, and digestive herbal teas designed to support normal hepatic and bowel elimination.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Promotes natural hydration, supports regular digestion, and leaves you feeling light.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('nutrition-guidance')">10-Point Details</button>
+              <a href="contact.html?therapy=Antioxidant%20Nutrition" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY 4: Mind & Body Wellness (6 items) -->
+  <section id="mind-body" class="section-padding bg-almond">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Category 04</span>
+        <h2 class="section-title">Mind & Body Wellness</h2>
+        <p class="section-subtitle">
+          Holistic somatic modalities, guided relaxation, sound immersion, and stress-buffering therapies designed to harmonize psychological and physiological states.
+        </p>
+      </div>
+
+      <div class="grid-6">
+        <!-- 19. Guided Relaxation -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-112.png" alt="Group Yoga Nidra guided relaxation with eye masks on mats">
+            <span class="card-media-badge">Yoga Nidra</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Psychic Sleep</span>
+            <h3 class="card-title">Guided Relaxation</h3>
+            <p class="card-text">Systematic rotation of conscious awareness and breath calming practiced lying down in Savasana to induce deep restorative brainwave states.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Relieves deep emotional exhaustion and delivers restorative benefits equal to deep sleep.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('guided-relaxation')">10-Point Details</button>
+              <a href="contact.html?therapy=Guided%20Relaxation" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20. Mindfulness Sessions -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-116.png" alt="Group mindfulness retreat in bamboo forest sanctuary">
+            <span class="card-media-badge">Open Presence</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Non-Judgmental Focus</span>
+            <h3 class="card-title">Mindfulness Sessions</h3>
+            <p class="card-text">Cultivating present-moment witness awareness through guided seated contemplation in our bamboo meditation pavilion amidst nature.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Softens persistent mental rumination and strengthens emotional distress tolerance.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('guided-relaxation')">10-Point Details</button>
+              <a href="contact.html?therapy=Mindfulness%20Sessions" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21. Breathing Awareness -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-52.png" alt="Sound bath and breathing meditation with Tibetan bowls">
+            <span class="card-media-badge">Vagus Nerve</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Pranayama Harmony</span>
+            <h3 class="card-title">Breathing Awareness</h3>
+            <p class="card-text">Techniques focusing on prolonging the exhalation phase to stimulate parasympathetic vagal activity, slow racing thoughts, and ease chest tightness.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Quickly restores physiological calm during moments of acute daily stress.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('guided-relaxation')">10-Point Details</button>
+              <a href="contact.html?therapy=Breathing%20Awareness" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22. Stress Management Education -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-50.png" alt="Guided wellness relaxation room with spa guests in white robes">
+            <span class="card-media-badge">Somatic Coping</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Resilience Training</span>
+            <h3 class="card-title">Stress Management</h3>
+            <p class="card-text">Educational seminars deconstructing the physiology of the stress response and providing practical biofeedback-inspired somatic tools.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Teaches you how to recognize somatic tension early and respond with self-regulation.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('guided-relaxation')">10-Point Details</button>
+              <a href="contact.html?therapy=Stress%20Management" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 23. Meditation Experiences -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-105.png" alt="Group meditation circle in open-air thatched lake pavilion">
+            <span class="card-media-badge">Lake Shala</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Contemplative Sanctuary</span>
+            <h3 class="card-title">Meditation Experiences</h3>
+            <p class="card-text">Immersive group meditation conducted in open-air lakeside pavilions surrounded by gentle water ripples and morning forest sounds.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Accelerates inner quiet through biophilic nature immersion and group resonance.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('guided-relaxation')">10-Point Details</button>
+              <a href="contact.html?therapy=Meditation%20Experiences" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24. Somatic Sound Immersion -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-109.png" alt="Outdoor sound healing with gong and singing bowls on deck">
+            <span class="card-media-badge">Acoustic Therapy</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Vibrational Calm</span>
+            <h3 class="card-title">Somatic Sound Immersion</h3>
+            <p class="card-text">Acoustic vibrational baths utilizing tuned bronze gongs, quartz crystal singing bowls, and chimes to coax racing minds into theta wave relaxation.</p>
+            <div class="card-benefit"><strong>Benefit:</strong> Dissolves mental tension without requiring cognitive effort or active concentration.</div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewTherapyDetails('guided-relaxation')">10-Point Details</button>
+              <a href="contact.html?therapy=Sound%20Immersion" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Banner -->
+  <section class="section-padding-sm bg-dark" style="text-align: center;">
+    <div class="container">
+      <h2 style="color: #ffffff; margin-bottom: 0.75rem;">Need Assistance Selecting Suitable Therapies?</h2>
+      <p style="color: rgba(255,255,255,0.75); max-width: 600px; margin: 0 auto 1.75rem auto;">
+        Our clinical team will happily review your lifestyle context and recommend a coordinated therapeutic plan during your initial visit.
+      </p>
+      <a href="contact.html" class="btn btn-terracotta">Book An Initial Evaluation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+            <div class="brand-text">
+              <span class="brand-name">VERDANT LIFE</span>
+              <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+            </div>
+          </div>
+          <p class="footer-description">
+            A sanctuary dedicated to nature-inspired clinical wellness, classical yoga therapeutics, and sustainable holistic lifestyle guidance.
+          </p>
+          <!-- Sanctuary Social Media Channels -->
+          <div class="footer-social-links" aria-label="Sanctuary Social Media Channels">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Instagram" title="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Facebook" title="Connect on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on YouTube" title="Watch on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on LinkedIn" title="Follow our Clinical Board on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on X" title="Follow us on X">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Therapies</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#yoga">Therapeutic Yoga</a></li>
+            <li><a href="services.html#naturopathy">Naturopathy Treatments</a></li>
+            <li><a href="services.html#nutrition">Nutrition & Lifestyle</a></li>
+            <li><a href="services.html#mind-body">Mind & Body Wellness</a></li>
+            <li><a href="programs.html">Signature Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Patient Resources</h4>
+          <ul class="footer-links">
+            <li><a href="education.html">Wellness Journey Education</a></li>
+            <li><a href="doctors.html">Our Specialist Team</a></li>
+            <li><a href="facilities.html">Sanctuary Spaces</a></li>
+            <li><a href="journal.html">Wellness Journal</a></li>
+            <li><a href="dashboard.html">Patient Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visiting & Contact</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Request Consultation</a></li>
+            <li><a href="contact.html#hours">Visiting Hours</a></li>
+            <li><a href="contact.html#location">Sanctuary Directions</a></li>
+            <li><a href="about.html">About Our Heritage</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Verdant Life Naturopathy & Yoga Therapy Center. All rights reserved.</div>
+        <div>Natural Living • Authentic Compassion • Professional Guidance</div>
+      </div>
+
+      <div class="footer-disclaimer-notice">
+        <strong>Medical Disclaimer:</strong> The therapies, lifestyle programs, educational articles, and consultation suggestions provided by Verdant Life Naturopathy & Yoga Therapy Center are intended for general holistic wellbeing, relaxation, and lifestyle enhancement. They do not claim to diagnose, cure, mitigate, or guarantee clinical outcomes for medical conditions.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Modal Container -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title" style="margin: 0; font-size: 1.3rem;">Modal Header</h3>
+        <button class="modal-close" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="modal-body-content" class="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <!-- Drop to Top Button with Hover Effect -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Scroll to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
+

@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Portal & Dashboard | Verdant Life Naturopathy & Yoga Therapy</title>
+  <meta name="description" content="Personalized patient wellness dashboard for therapy milestone tracking, clinical progress breakdown, and upcoming scheduled consultations at Verdant Life.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>
+    (function() {
+      if (localStorage.getItem('verdant-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      if (localStorage.getItem('verdant-direction') === 'rtl') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      }
+    })();
+  </script>
+</head>
+<body class="portal-body">
+
+  <!-- ==================== MOBILE & TABLET NAVBAR (<= 1024px) ==================== -->
+  <header class="portal-mobile-navbar" id="portalMobileNavbar">
+    <a href="index.html" class="portal-brand" title="Verdant Life Sanctuary">
+      <div class="portal-brand-symbol">
+        <img src="images/logo.png" alt="Verdant Life Logo">
+      </div>
+      <div class="portal-brand-text">
+        <span class="portal-brand-name">VERDANT LIFE</span>
+        <span class="portal-brand-sub">Patient Portal</span>
+      </div>
+    </a>
+    <button class="portal-hamburger-btn" id="portalHamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+      <span class="portal-hamburger-icon">☰</span>
+    </button>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="portal-backdrop" id="portalBackdrop"></div>
+
+  <div class="portal-shell">
+    <!-- ==================== LEFT SIDEBAR ==================== -->
+    <aside class="portal-sidebar" id="portalSidebar">
+      <div class="portal-sidebar-top">
+        <!-- Logo & Branding (with Close Button on Mobile/Tablet) -->
+        <div class="portal-sidebar-header-row">
+          <a href="index.html" class="portal-brand" title="Verdant Life Sanctuary">
+            <div class="portal-brand-symbol">
+        <img src="images/logo.png" alt="Verdant Life Logo">
+      </div>
+            <div class="portal-brand-text">
+              <span class="portal-brand-name">VERDANT LIFE</span>
+              <span class="portal-brand-sub">Patient Portal</span>
+            </div>
+          </a>
+          <button class="portal-sidebar-close-btn" id="portalSidebarCloseBtn" aria-label="Close Sidebar Menu">✕</button>
+        </div>
+
+        <!-- Patient Profile Card -->
+        <div class="portal-user-badge">
+          <div class="portal-user-name">Eleanor Vance</div>
+          <span class="portal-user-plan">Spinal Care & Vagal Cadence</span>
+          <div class="portal-user-id">ID: VL-2026-7742</div>
+        </div>
+
+        <!-- Navigation Menu Items -->
+        <nav aria-label="Portal Navigation">
+          <ul class="portal-nav">
+            <li>
+              <button class="portal-nav-btn active" onclick="switchPortalTab('overview', this)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Overview</span>
+              </button>
+            </li>
+            <li>
+              <button class="portal-nav-btn" onclick="switchPortalTab('programs', this)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>My Programs</span>
+              </button>
+            </li>
+            <li>
+              <button class="portal-nav-btn" onclick="switchPortalTab('schedule', this)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Therapy Schedule</span>
+              </button>
+            </li>
+            <li>
+              <button class="portal-nav-btn" onclick="switchPortalTab('analytics', this)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                <span>My Results & Analytics</span>
+              </button>
+            </li>
+            <li>
+              <button class="portal-nav-btn" onclick="switchPortalTab('resources', this)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>Study & Care Guides</span>
+              </button>
+            </li>
+            <li>
+              <button class="portal-nav-btn" onclick="switchPortalTab('calendar', this)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Session Timetable</span>
+              </button>
+            </li>
+            <li>
+              <button class="portal-nav-btn" onclick="switchPortalTab('support', this)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Physician Support</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Bottom Utilities: Theme, RTL & Logout -->
+      <div class="portal-sidebar-footer">
+        <div class="portal-controls-row">
+          <span class="portal-controls-label">Theme & Direction</span>
+          <div class="portal-control-icons">
+            <button class="portal-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+            <button class="portal-icon-btn rtl-toggle-btn" aria-label="Toggle Text Direction" title="Toggle RTL/LTR">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 3 21 3 21 8"></polyline>
+                <line x1="4" y1="20" x2="21" y2="3"></line>
+                <polyline points="21 16 21 21 16 21"></polyline>
+                <line x1="15" y1="15" x2="21" y2="21"></line>
+                <line x1="4" y1="4" x2="9" y2="9"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <a href="index.html" class="portal-exit-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          <span>Exit to Website</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ==================== MAIN CONTENT AREA ==================== -->
+    <main class="portal-main">
+
+      <!-- ======================================================== -->
+      <!-- TAB 1: OVERVIEW (Default Active View)                    -->
+      <!-- ======================================================== -->
+      <section id="portal-tab-overview" class="portal-tab-panel active">
+        <!-- Top Welcome Header -->
+        <div class="portal-welcome-header">
+          <div>
+            <span class="portal-welcome-tag">Patient Wellness Dashboard</span>
+            <h1 class="portal-welcome-title">Welcome back, Eleanor!</h1>
+            <p class="portal-welcome-sub">
+              You have completed 18 of 24 planned wellness therapy milestones for this care cycle.
+            </p>
+          </div>
+
+          <div class="portal-header-actions">
+            <a href="contact.html" class="portal-btn-primary">
+              + Request Appointment →
+            </a>
+            <button class="portal-btn-secondary" onclick="switchPortalTab('schedule')">
+              View Timetable
+            </button>
+          </div>
+        </div>
+
+        <!-- Row 1: 4 Key Metric Stat Cards with Website Terracotta Progress Bars -->
+        <div class="portal-metric-grid">
+          <!-- Card 1 -->
+          <div class="portal-metric-card">
+            <div>
+              <div class="portal-metric-val">18</div>
+              <div class="portal-metric-label">Therapies Completed</div>
+            </div>
+            <div class="portal-metric-bar-bg">
+              <div class="portal-metric-bar-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="portal-metric-card">
+            <div>
+              <div class="portal-metric-val">89.4%</div>
+              <div class="portal-metric-label">Vitality Index Score</div>
+            </div>
+            <div class="portal-metric-bar-bg">
+              <div class="portal-metric-bar-fill" style="width: 89.4%;"></div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="portal-metric-card">
+            <div>
+              <div class="portal-metric-val">98.2</div>
+              <div class="portal-metric-label">Recovery Percentile</div>
+            </div>
+            <div class="portal-metric-bar-bg">
+              <div class="portal-metric-bar-fill" style="width: 98.2%;"></div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="portal-metric-card">
+            <div>
+              <div class="portal-metric-val">14 Days</div>
+              <div class="portal-metric-label">Daily Practice Streak</div>
+            </div>
+            <div class="portal-metric-bar-bg">
+              <div class="portal-metric-bar-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Therapy Pathway Progress Breakdown (2x2 Grid) -->
+        <div class="portal-breakdown-section">
+          <div class="portal-section-header">
+            <h2 class="portal-section-title">Therapy Pathway Progress Breakdown</h2>
+            <select class="portal-filter-select" aria-label="Filter Pathways">
+              <option value="all">All 4 Pathways</option>
+              <option value="yoga">Therapeutic Yoga</option>
+              <option value="hydro">Hydrotherapy</option>
+              <option value="nutrition">Circadian Nutrition</option>
+              <option value="somatic">Neuro-Somatic Care</option>
+            </select>
+          </div>
+
+          <div class="portal-breakdown-grid">
+            <!-- Pathway Card 1 -->
+            <div class="portal-breakdown-card">
+              <div class="portal-breakdown-top">
+                <h3 class="portal-breakdown-card-title">Therapeutic Yoga & Posture Alignment</h3>
+                <span class="portal-breakdown-score">94.0%</span>
+              </div>
+              <div class="portal-metric-bar-bg">
+                <div class="portal-metric-bar-fill" style="width: 94%;"></div>
+              </div>
+              <p class="portal-breakdown-desc">
+                <strong>Mastered:</strong> Diaphragmatic Cadence, Pelvic Stabilization. <strong>Focus:</strong> Thoracic Spine Mobility.
+              </p>
+            </div>
+
+            <!-- Pathway Card 2 -->
+            <div class="portal-breakdown-card">
+              <div class="portal-breakdown-top">
+                <h3 class="portal-breakdown-card-title">Hydrotherapy & Thermal Balneology</h3>
+                <span class="portal-breakdown-score">88.5%</span>
+              </div>
+              <div class="portal-metric-bar-bg">
+                <div class="portal-metric-bar-fill" style="width: 88.5%;"></div>
+              </div>
+              <p class="portal-breakdown-desc">
+                <strong>Mastered:</strong> Alternating Contrast Foot Baths, Steam Packs. <strong>Focus:</strong> Underwater Jet Tolerance.
+              </p>
+            </div>
+
+            <!-- Pathway Card 3 -->
+            <div class="portal-breakdown-card">
+              <div class="portal-breakdown-top">
+                <h3 class="portal-breakdown-card-title">Circadian Nutrition & Botanical Diet</h3>
+                <span class="portal-breakdown-score">92.2%</span>
+              </div>
+              <div class="portal-metric-bar-bg">
+                <div class="portal-metric-bar-fill" style="width: 92.2%;"></div>
+              </div>
+              <p class="portal-breakdown-desc">
+                <strong>Mastered:</strong> 12-Hour Fasting Window, Morning Herb Decoctions. <strong>Focus:</strong> Low-Glycemic Evening Meals.
+              </p>
+            </div>
+
+            <!-- Pathway Card 4 -->
+            <div class="portal-breakdown-card">
+              <div class="portal-breakdown-top">
+                <h3 class="portal-breakdown-card-title">Neuro-Somatic Relaxation & Vagal Tone</h3>
+                <span class="portal-breakdown-score">84.0%</span>
+              </div>
+              <div class="portal-metric-bar-bg">
+                <div class="portal-metric-bar-fill" style="width: 84%;"></div>
+              </div>
+              <p class="portal-breakdown-desc">
+                <strong>Mastered:</strong> 5.5 Breaths/Min Resonance, Yoga Nidra. <strong>Focus:</strong> Deep REM Sleep Continuity.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Dual Column Split (Upcoming Sessions Table + Notifications) -->
+        <div class="portal-split-row">
+          <!-- Left: Upcoming Sessions Table Card -->
+          <div class="portal-table-card">
+            <h2 class="portal-table-header-title">Upcoming Practice & Therapy Sessions</h2>
+            <div class="portal-table-wrapper">
+              <table class="portal-dark-table">
+                <thead>
+                  <tr>
+                    <th>Therapy Title</th>
+                    <th>Date & Time</th>
+                    <th>Duration</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="portal-session-title">1-on-1 Posture Refinement</span>
+                      <span class="portal-session-doc">Dr. Rajeshwar Sen • Studio 2 Shala</span>
+                    </td>
+                    <td>Nov 16, 2026 • 09:30 AM</td>
+                    <td>60 Mins</td>
+                    <td>
+                      <button class="portal-action-pill portal-action-primary" onclick="alert('Check-In confirmed for Nov 16 at Studio 2 Shala.')">
+                        Start Check-In
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="portal-session-title">Deep Jet Mineral Hydro-Tone</span>
+                      <span class="portal-session-doc">Dr. Ananya Sharma • Hydro Suite B</span>
+                    </td>
+                    <td>Nov 18, 2026 • 02:00 PM</td>
+                    <td>45 Mins</td>
+                    <td>
+                      <button class="portal-action-pill portal-action-outline">
+                        Confirmed
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="portal-session-title">Acupressure Foot Reflexology</span>
+                      <span class="portal-session-doc">Sanctuary Team • Pondside Pavilion</span>
+                    </td>
+                    <td>Nov 21, 2026 • 11:15 AM</td>
+                    <td>50 Mins</td>
+                    <td>
+                      <button class="portal-action-pill portal-action-outline" onclick="alert('Reschedule request initiated. Admissions desk will contact you within 24 hours.')">
+                        Reschedule
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Right: Recent Clinical Notifications Card -->
+          <div class="portal-notifications-card">
+            <h2 class="portal-notifications-title">Recent Notifications</h2>
+            <div class="portal-notifications-list">
+              <!-- Item 1 -->
+              <div class="portal-notification-item">
+                <div class="portal-notif-title">Treatment Plan Updated</div>
+                <p class="portal-notif-desc">
+                  Dr. Ananya Sharma updated your hydrotherapy parameter: added chamomile-infused mineral finish.
+                </p>
+                <div class="portal-notif-meta">Prof. Sharma live review: Yesterday 5:00 PM</div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="portal-notification-item">
+                <div class="portal-notif-title">Biometric Vitality Report Ready</div>
+                <p class="portal-notif-desc">
+                  Your Heart Rate Variability (HRV) increased +42% over 14-day nature cure cycle.
+                </p>
+                <div class="portal-notif-meta">Published: Nov 12, 2026 • 11:30 AM</div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="portal-notification-item" style="border-left-color: #2e663a;">
+                <div class="portal-notif-title">Receipt REC-2026-8845 Issued</div>
+                <p class="portal-notif-desc">
+                  Official statement for Restorative Yoga Therapy available for download.
+                </p>
+                <div class="portal-notif-meta">Automated Billing: Nov 11, 2026</div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="portal-notification-item" style="border-left-color: #4a2e1b;">
+                <div class="portal-notif-title">Herbal Tea Decoction Refill</div>
+                <p class="portal-notif-desc">
+                  Customized evening valerian-chamomile blend packaged at dispensary.
+                </p>
+                <div class="portal-notif-meta">Dispensary: Nov 09, 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 2: MY PROGRAMS (2 Complete Clinical Sections)        -->
+      <!-- ======================================================== -->
+      <section id="portal-tab-programs" class="portal-tab-panel">
+        <div class="portal-welcome-header">
+          <div>
+            <span class="portal-welcome-tag">Active Care Pathways</span>
+            <h1 class="portal-welcome-title">My Registered Clinical Programs</h1>
+            <p class="portal-welcome-sub">Comprehensive multi-modality therapeutic journeys overseen by our clinical faculty.</p>
+          </div>
+          <div class="portal-header-actions">
+            <a href="programs.html" class="portal-btn-secondary">Explore All Programs ↗</a>
+          </div>
+        </div>
+
+        <!-- Section 1: Active Prescribed Clinical Recovery Pathways -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 1: Active Prescribed Recovery Pathways</h2>
+              <p class="portal-section-sub">Two personalized care tracks currently active in your biometric regimen.</p>
+            </div>
+            <span class="badge-status badge-confirmed">2 Active Protocols</span>
+          </div>
+
+          <div class="portal-breakdown-grid">
+            <!-- Pathway Card A -->
+            <div class="portal-breakdown-card">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+                <div>
+                  <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 800; color: #a65830; letter-spacing: 0.06em;">Pathway 01 • Spinal Restoration</span>
+                  <h3 class="portal-breakdown-card-title" style="font-size: 1.15rem; margin-top: 0.2rem;">Spinal Decompression & Biomechanical Alignment</h3>
+                </div>
+                <span class="badge-status badge-confirmed">In Progress</span>
+              </div>
+              <p class="portal-breakdown-desc" style="margin-top: 0;">
+                Integrates private Iyengar therapeutic rope support, axial spinal traction baths, and gentle pelvic realignment to relieve intervertebral pressure.
+              </p>
+              <div style="margin: 1.25rem 0 0.5rem 0;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.35rem;">
+                  <span>Protocol Milestone Progress</span>
+                  <span style="color: #a65830;">14 of 18 Sessions Completed (78%)</span>
+                </div>
+                <div class="portal-metric-bar-bg">
+                  <div class="portal-metric-bar-fill" style="width: 78%;"></div>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Attending: <strong>Dr. Rajeshwar Sen</strong></span>
+                <button class="portal-action-pill portal-action-primary" onclick="alert('Viewing Complete Clinical Dossier for Spinal Decompression Protocol.')">View Protocol Dossier →</button>
+              </div>
+            </div>
+
+            <!-- Pathway Card B -->
+            <div class="portal-breakdown-card">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+                <div>
+                  <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 800; color: #a65830; letter-spacing: 0.06em;">Pathway 02 • Autonomic Regulation</span>
+                  <h3 class="portal-breakdown-card-title" style="font-size: 1.15rem; margin-top: 0.2rem;">Autonomic Reset & Circadian Cadence</h3>
+                </div>
+                <span class="badge-status badge-confirmed">In Progress</span>
+              </div>
+              <p class="portal-breakdown-desc" style="margin-top: 0;">
+                Hydrothermal contrast baths, 5.5 breaths/min resonant pranayama, photic morning daylight exposure, and valerian-chamomile botanical decoctions.
+              </p>
+              <div style="margin: 1.25rem 0 0.5rem 0;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.35rem;">
+                  <span>Protocol Milestone Progress</span>
+                  <span style="color: #a65830;">9 of 12 Sessions Completed (75%)</span>
+                </div>
+                <div class="portal-metric-bar-bg">
+                  <div class="portal-metric-bar-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Attending: <strong>Dr. Ananya Sharma</strong></span>
+                <button class="portal-action-pill portal-action-primary" onclick="alert('Viewing Complete Clinical Dossier for Autonomic Reset Protocol.')">View Protocol Dossier →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Clinical Program Roadmap & Milestone Phasing -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 2: Therapeutic Milestone Timeline & Clinical Roadmap</h2>
+              <p class="portal-section-sub">A 4-phase clinical progression track calibrated to physiological adaptation stages.</p>
+            </div>
+          </div>
+
+          <div class="portal-timeline-track">
+            <!-- Step 1 -->
+            <div class="portal-timeline-step completed">
+              <div class="portal-step-number">✓</div>
+              <div class="portal-step-content">
+                <div class="portal-step-header">
+                  <h4 class="portal-step-title">Phase 1: Acute Decompression & Inflammation Relief (Days 1–7)</h4>
+                  <span class="portal-step-status completed">100% Completed</span>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0; line-height: 1.5;">
+                  Relieved sympathetic hyperactivity through thermal mineral baths and passive supported traction asanas. Inflammatory markers stabilized.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="portal-timeline-step active">
+              <div class="portal-step-number">02</div>
+              <div class="portal-step-content">
+                <div class="portal-step-header">
+                  <h4 class="portal-step-title">Phase 2: Postural Re-Patterning & Core Stabilization (Days 8–16)</h4>
+                  <span class="portal-step-status active">Active Phase (75%)</span>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0; line-height: 1.5;">
+                  Active neuromuscular re-education, pelvic tilt calibration, and diaphragmatic rhythm pacing. 1-on-1 private studio sessions underway.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="portal-timeline-step">
+              <div class="portal-step-number">03</div>
+              <div class="portal-step-content">
+                <div class="portal-step-header">
+                  <h4 class="portal-step-title">Phase 3: Circadian Integration & Metabolic Fortification (Days 17–24)</h4>
+                  <span class="portal-step-status upcoming">Scheduled (Next Week)</span>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0; line-height: 1.5;">
+                  Deep tissue balneology, intermittent eating window calibration, and evening botanical decoctions to sustain neuro-endocrine balance.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="portal-timeline-step">
+              <div class="portal-step-number">04</div>
+              <div class="portal-step-content">
+                <div class="portal-step-header">
+                  <h4 class="portal-step-title">Phase 4: Home Autonomy & Long-Term Vital Maintenance (Post-Care)</h4>
+                  <span class="portal-step-status upcoming">Pending Final Assessment</span>
+                </div>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0; line-height: 1.5;">
+                  Discharge consultation, individualized home yoga prescription, and ongoing telemedicine check-ins through this patient portal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 3: THERAPY SCHEDULE (2 Complete Clinical Sections)   -->
+      <!-- ======================================================== -->
+      <section id="portal-tab-schedule" class="portal-tab-panel">
+        <div class="portal-welcome-header">
+          <div>
+            <span class="portal-welcome-tag">Sanctuary Timetable</span>
+            <h1 class="portal-welcome-title">My Therapy Schedule & Calendar</h1>
+            <p class="portal-welcome-sub">Confirmed treatment appointments, room locations, and pre-session guidelines.</p>
+          </div>
+          <div class="portal-header-actions">
+            <a href="contact.html" class="portal-btn-primary">+ Book Extra Session</a>
+          </div>
+        </div>
+
+        <!-- Section 1: Weekly Sanctuary Session Ledger & Calendar Grid -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 1: Weekly Sanctuary Session Ledger</h2>
+              <p class="portal-section-sub">Week 3 active schedule (November 10 – November 16, 2026).</p>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700; color: #a65830;">Current Time: 04:10 PM</span>
+          </div>
+
+          <!-- Calendar Strip -->
+          <div style="background: #ffffff; border: 1px solid var(--border-light); border-radius: 14px; padding: 1.25rem; margin-bottom: 1.5rem; box-shadow: 0 4px 18px rgba(36, 22, 14, 0.04);">
+            <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.65rem; text-align: center; font-size: 0.82rem;">
+              <div style="font-weight: 700; color: var(--text-muted);">Mon 10</div>
+              <div style="font-weight: 700; color: var(--text-muted);">Tue 11</div>
+              <div style="font-weight: 700; color: var(--text-muted);">Wed 12</div>
+              <div style="font-weight: 700; color: #a65830;">Thu 13 (Today)</div>
+              <div style="font-weight: 700; color: var(--text-muted);">Fri 14</div>
+              <div style="font-weight: 700; color: var(--text-muted);">Sat 15</div>
+              <div style="font-weight: 700; color: var(--text-muted);">Sun 16</div>
+
+              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: #2e663a; font-weight:700;">Completed</span><br><small>Asana Clinic</small></div>
+              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: #2e663a; font-weight:700;">Completed</span><br><small>Hydro Bath</small></div>
+              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: #2e663a; font-weight:700;">Completed</span><br><small>Aromatherapy</small></div>
+              <div style="padding: 0.85rem; background: rgba(166, 88, 48, 0.12); border: 2px solid #a65830; border-radius: 8px; font-weight: 700;"><span style="color: #a65830;">Rest Day</span><br><small>Walking Path</small></div>
+              <div style="padding: 0.85rem; background: #ffffff; border-radius: 8px; border: 1px solid var(--border-medium);"><span style="color: #4a2e1b; font-weight:700;">09:30 AM</span><br><small>Studio 2 Shala</small></div>
+              <div style="padding: 0.85rem; background: #ffffff; border-radius: 8px; border: 1px solid var(--border-medium);"><span style="color: #4a2e1b; font-weight:700;">02:00 PM</span><br><small>Hydro Suite B</small></div>
+              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: var(--text-muted); font-weight:600;">Open Shala</span><br><small>Self Practice</small></div>
+            </div>
+          </div>
+
+          <!-- Detailed Ledger Table -->
+          <div class="portal-table-card">
+            <div class="portal-table-wrapper">
+              <table class="portal-dark-table">
+                <thead>
+                  <tr>
+                    <th>Scheduled Session</th>
+                    <th>Sanctuary Venue</th>
+                    <th>Physician / Lead</th>
+                    <th>Date & Exact Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1-on-1 Posture Refinement & Axial Traction</strong></td>
+                    <td>Studio 2 (Iyengar Rope Shala)</td>
+                    <td>Dr. Rajeshwar Sen</td>
+                    <td>Friday, Nov 14 • 09:30 AM – 10:30 AM</td>
+                    <td><span class="badge-status badge-confirmed">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Hydro-Tone Deep Jet Mineral Balneotherapy</strong></td>
+                    <td>Hydrotherapy Suite B</td>
+                    <td>Dr. Ananya Sharma</td>
+                    <td>Saturday, Nov 15 • 02:00 PM – 02:45 PM</td>
+                    <td><span class="badge-status badge-confirmed">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Botanical Mud Pack & Thermal Steam Wrap</strong></td>
+                    <td>Thermal Recovery Pavilion 3</td>
+                    <td>Senior Balneotherapist Meera</td>
+                    <td>Tuesday, Nov 18 • 11:00 AM – 12:00 PM</td>
+                    <td><span class="badge-status badge-confirmed">Confirmed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Patient Arrival Protocols & Session Preparation Standards -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 2: Arrival Protocols & Session Preparation Standards</h2>
+              <p class="portal-section-sub">Clinical recommendations to ensure maximum physiological benefit from your upcoming therapies.</p>
+            </div>
+          </div>
+
+          <div class="portal-breakdown-grid">
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">💧 Hydration & Botanical Fasting Window</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+                For hydrotherapy and thermal sessions, avoid heavy solid meals for 90 minutes beforehand. Hydrate with room-temperature electrolyte lemon water available at the sanctuary lounge.
+              </p>
+            </div>
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">🧘 Attire & Organic Cotton Movement Wear</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+                Wear loose-fitting, non-restrictive organic cotton clothing for yoga therapy to permit unrestricted thoracic and pelvic excursions. Organic robes are provided for balneology suites.
+              </p>
+            </div>
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">🌿 Pre-Session Thermal Rest Chamber (15 Mins)</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+                Arrive 15 minutes before your scheduled appointment time to decompress in the acoustic stillness chamber. This transition down-regulates sympathetic blood pressure prior to treatment.
+              </p>
+            </div>
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">📋 Contraindication & Symptom Disclosure</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+                Inform your attending therapist immediately if you experience acute flare-ups, dizziness, or cutaneous sensitivity before immersion or deep traction. Protocols will be instantly recalibrated.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 4: MY RESULTS & ANALYTICS (2 Clinical Sections)      -->
+      <!-- ======================================================== -->
+      <section id="portal-tab-analytics" class="portal-tab-panel">
+        <div class="portal-welcome-header">
+          <div>
+            <span class="portal-welcome-tag">Biometric Progress</span>
+            <h1 class="portal-welcome-title">My Clinical Results & Vitality Analytics</h1>
+            <p class="portal-welcome-sub">Continuous biometric readouts, autonomic tone assessments, and physician notes.</p>
+          </div>
+          <div class="portal-header-actions">
+            <button class="portal-btn-primary" onclick="alert('Exporting Complete 14-Day Clinical PDF Report.')">Export Clinical Report (PDF) ↓</button>
+          </div>
+        </div>
+
+        <!-- Section 1: Objective Biometric Biomarker Matrix -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 1: Objective Biometric Biomarker Matrix</h2>
+              <p class="portal-section-sub">Quantified physiological adaptations over your 14-day nature cure immersion.</p>
+            </div>
+            <span class="badge-status badge-confirmed">Clinically Verified</span>
+          </div>
+
+          <div class="portal-metric-grid">
+            <div class="portal-metric-card">
+              <div class="portal-metric-val">+48%</div>
+              <div class="portal-metric-label">Heart Rate Variability (HRV)</div>
+              <div class="portal-metric-bar-bg"><div class="portal-metric-bar-fill" style="width: 85%;"></div></div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.6rem;">Baseline: 42 ms → Current: 62 ms (Robust vagal tone)</div>
+            </div>
+            <div class="portal-metric-card">
+              <div class="portal-metric-val">118/76</div>
+              <div class="portal-metric-label">Resting Blood Pressure</div>
+              <div class="portal-metric-bar-bg"><div class="portal-metric-bar-fill" style="width: 95%;"></div></div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.6rem;">Optimal hemodynamic stabilization (Down from 134/86)</div>
+            </div>
+            <div class="portal-metric-card">
+              <div class="portal-metric-val">8.2 hrs</div>
+              <div class="portal-metric-label">Average Deep Sleep Duration</div>
+              <div class="portal-metric-bar-bg"><div class="portal-metric-bar-fill" style="width: 82%;"></div></div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.6rem;">+42% restorative slow-wave time since Day 3</div>
+            </div>
+            <div class="portal-metric-card">
+              <div class="portal-metric-val">1.2 µg/dL</div>
+              <div class="portal-metric-label">Salivary Cortisol (Down 38%)</div>
+              <div class="portal-metric-bar-bg"><div class="portal-metric-bar-fill" style="width: 72%;"></div></div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.6rem;">Morning circadian awakening spike restored to normal</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Multidisciplinary Faculty Evaluations & Progress Notes -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 2: Faculty Clinical Evaluations & Case Notes</h2>
+              <p class="portal-section-sub">Signed assessments from your primary attending specialists.</p>
+            </div>
+          </div>
+
+          <div class="portal-breakdown-grid">
+            <!-- Review A -->
+            <div class="portal-breakdown-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <strong style="color: #4a2e1b; font-size: 1.05rem;">Yoga Therapy & Biomechanics Evaluation</strong>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Evaluated Nov 12, 2026</span>
+              </div>
+              <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+                "Eleanor has demonstrated significant improvement in pelvic symmetry and thoracic spinal mobility. The anterior pelvic tilt observed during initial intake has reduced from 14° to 8°, resulting in complete alleviation of lower lumbar discomfort during walking."
+              </p>
+              <div style="padding: 0.75rem; background: var(--bg-cream); border-radius: 8px; font-size: 0.78rem; color: #4a2e1b;">
+                <strong>Physician Recommendation:</strong> Progress to unsupported axial extensions with continued diaphragmatic breath synchrony.
+              </div>
+              <div style="margin-top: 1rem; font-size: 0.8rem; font-weight: 700; color: #a65830;">
+                — Dr. Rajeshwar Sen, Lead Clinical Yoga Therapist (C-IAYT)
+              </div>
+            </div>
+
+            <!-- Review B -->
+            <div class="portal-breakdown-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <strong style="color: #4a2e1b; font-size: 1.05rem;">Balneology & Vascular Tone Evaluation</strong>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Evaluated Nov 11, 2026</span>
+              </div>
+              <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+                "Cutaneous microcirculation response during alternating thermal hydrotherapy has normalized. Capillary refill time in lower extremities reduced from 3.4 seconds to 1.8 seconds. Peripheral lymph stagnation has completely resolved without edema."
+              </p>
+              <div style="padding: 0.75rem; background: var(--bg-cream); border-radius: 8px; font-size: 0.78rem; color: #4a2e1b;">
+                <strong>Physician Recommendation:</strong> Maintain 38°C thermal mineral immersion followed by 20°C contrast plunge twice weekly.
+              </div>
+              <div style="margin-top: 1rem; font-size: 0.8rem; font-weight: 700; color: #a65830;">
+                — Dr. Ananya Sharma, BNYS, Chief of Balneology & Lifestyle Medicine
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 5: STUDY & CARE GUIDES (2 Clinical Sections)         -->
+      <!-- ======================================================== -->
+      <section id="portal-tab-resources" class="portal-tab-panel">
+        <div class="portal-welcome-header">
+          <div>
+            <span class="portal-welcome-tag">Digital Sanctuary Library</span>
+            <h1 class="portal-welcome-title">Study & Care Guides for Eleanor</h1>
+            <p class="portal-welcome-sub">Download customized home practice guides, botanical recipes, and breathing cadences.</p>
+          </div>
+        </div>
+
+        <!-- Section 1: Prescribed Daily Home Practice Sequences -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 1: Prescribed Daily Home Practice Sequences</h2>
+              <p class="portal-section-sub">Illustrated step-by-step PDF dossiers for morning and evening restorative regimens.</p>
+            </div>
+          </div>
+
+          <div class="portal-breakdown-grid">
+            <div class="portal-breakdown-card">
+              <span style="font-size: 0.72rem; font-weight: 800; color: #a65830; text-transform: uppercase;">Guide #01 • Restorative Asana</span>
+              <h4 style="font-size: 1.05rem; margin: 0.35rem 0 0.5rem 0; color: var(--text-main);">Supta Baddha Konasana Axial Traction Protocol</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+                Supported reclining bound angle pose using bolsters and pelvic straps. Decompresses sacral articulation and facilitates diaphragmatic thoracic expansion.
+              </p>
+              <button class="portal-action-pill portal-action-primary" onclick="alert('Downloading Patient Guide: Supta_Baddha_Konasana_Protocol.pdf')">Download Protocol (PDF 2.4 MB) ↓</button>
+            </div>
+
+            <div class="portal-breakdown-card">
+              <span style="font-size: 0.72rem; font-weight: 800; color: #a65830; text-transform: uppercase;">Guide #02 • Autonomic Resonance</span>
+              <h4 style="font-size: 1.05rem; margin: 0.35rem 0 0.5rem 0; color: var(--text-main);">5.5 Breaths/Min Resonant Breathing Audio Guide</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+                Audio-paced resonance frequency pacing audio (0.1 Hz) designed to optimize heart rate variability and induce parasympathetic down-regulation.
+              </p>
+              <button class="portal-action-pill portal-action-primary" onclick="alert('Downloading Audio Cadence Guide: Resonance_Breathing_0.1Hz.mp3')">Download Audio Guide (MP3 14 MB) ↓</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Botanical Nutrition & Circadian Decoctions Dispensary -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 2: Botanical Nutrition & Circadian Decoctions</h2>
+              <p class="portal-section-sub">Custom medicinal tea steep times, botanical formulations, and chronobiological digestive windows.</p>
+            </div>
+          </div>
+
+          <div class="portal-breakdown-grid">
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">🍵 Morning Liver & Lymphatic Herb Tonic</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin: 0 0 0.75rem 0;">
+                Warm infusion of crushed dandelion root, fresh turmeric rhizome, and black cumin seed. Drink 20 minutes before breakfast to stimulate bile flow.
+              </p>
+              <div style="font-size: 0.75rem; color: #a65830; font-weight: 700;">Steep Temperature: 90°C • Duration: 10 mins covered</div>
+            </div>
+
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">🍵 Evening Valerian-Chamomile Neuro-Calm Tea</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin: 0 0 0.75rem 0;">
+                Decoction of whole chamomile flowers, valerian root, and organic spearmint. Drink 45 minutes before sleep to induce GABAergic relaxation.
+              </p>
+              <div style="font-size: 0.75rem; color: #a65830; font-weight: 700;">Steep Temperature: 95°C • Duration: 12 mins covered</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 6: SESSION TIMETABLE (2 Clinical Sections)           -->
+      <!-- ======================================================== -->
+      <section id="portal-tab-calendar" class="portal-tab-panel">
+        <div class="portal-welcome-header">
+          <div>
+            <span class="portal-welcome-tag">Facility Timetable</span>
+            <h1 class="portal-welcome-title">Sanctuary Studio & Session Timetable</h1>
+            <p class="portal-welcome-sub">Upcoming specialist intake evaluations, facility hours, and scheduled review timelines.</p>
+          </div>
+        </div>
+
+        <!-- Section 1: Master Sanctuary Facility & Studio Timetable -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 1: Daily Studio & Pavilion Timetable</h2>
+              <p class="portal-section-sub">Operational schedule across all healing pavilions for November 2026.</p>
+            </div>
+          </div>
+
+          <div class="portal-table-card">
+            <div class="portal-table-wrapper">
+              <table class="portal-dark-table">
+                <thead>
+                  <tr>
+                    <th>Facility / Pavilion</th>
+                    <th>Morning Session</th>
+                    <th>Afternoon Session</th>
+                    <th>Evening Restorative</th>
+                    <th>Capacity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Iyengar Yoga Shala (Studio 2)</strong></td>
+                    <td>07:00 AM – 08:30 AM</td>
+                    <td>11:00 AM – 12:30 PM</td>
+                    <td>05:00 PM – 06:30 PM</td>
+                    <td><span style="color: #2e663a; font-weight:700;">Open (4 mats left)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Hydrotherapy Suite B</strong></td>
+                    <td>08:30 AM – 10:30 AM</td>
+                    <td>02:00 PM – 04:00 PM</td>
+                    <td>06:00 PM – 07:30 PM</td>
+                    <td><span style="color: #a65830; font-weight:700;">Private Booking Only</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Pondside Sound Meditation Dome</strong></td>
+                    <td>06:30 AM – 07:30 AM</td>
+                    <td>01:00 PM – 02:00 PM</td>
+                    <td>06:30 PM – 07:45 PM</td>
+                    <td><span style="color: #2e663a; font-weight:700;">Open (Walk-in Welcome)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Aromatherapy Thermal Pavilion</strong></td>
+                    <td>09:00 AM – 11:30 AM</td>
+                    <td>03:00 PM – 05:30 PM</td>
+                    <td>07:00 PM – 08:30 PM</td>
+                    <td><span style="color: #2e663a; font-weight:700;">Open (6 spots left)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Upcoming Physician Intake Consultations & Booking System -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 2: Upcoming Physician Intake Evaluation</h2>
+              <p class="portal-section-sub">Your next mandatory clinical review with Chief of Balneology & Lifestyle Medicine.</p>
+            </div>
+          </div>
+
+          <div class="portal-breakdown-card" style="padding: 2rem;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <span class="portal-welcome-tag" style="margin-bottom: 0.5rem;">Mandatory Care Review</span>
+                <h3 style="font-size: 1.3rem; margin: 0.2rem 0; color: var(--text-main);">Clinical Progress Review #03</h3>
+                <div style="font-size: 0.9rem; color: var(--text-muted);">
+                  <strong>Physician:</strong> Dr. Ananya Sharma, BNYS • <strong>Date:</strong> Thursday, Nov 19, 2026 at 10:30 AM (In-Person Pavilion Suite 3)
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.75rem; align-items: center;">
+                <button class="portal-action-pill portal-action-primary" onclick="alert('Appointment confirmed on your personal calendar.')">Add to Calendar ↗</button>
+                <a href="contact.html" class="portal-action-pill portal-action-outline">Reschedule Review</a>
+              </div>
+            </div>
+
+            <div style="background: var(--bg-cream); border: 1px solid var(--border-light); border-radius: 10px; padding: 1.25rem;">
+              <strong style="color: #4a2e1b; display: block; margin-bottom: 0.35rem;">Review Agenda & Preparation Checklist:</strong>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.84rem; color: var(--text-muted); line-height: 1.7;">
+                <li>Evaluate 14-day continuous HRV sleep architecture telemetry records.</li>
+                <li>Conduct physical spinal lordosis re-screening and pelvic tilt calibration.</li>
+                <li>Formulate Phase 3 customized hydrotherapy water-jet pulsation settings.</li>
+                <li>Refine evening botanical decoction blend based on sleep latency data.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 7: PHYSICIAN SUPPORT (2 Clinical Sections)           -->
+      <!-- ======================================================== -->
+      <section id="portal-tab-support" class="portal-tab-panel">
+        <div class="portal-welcome-header">
+          <div>
+            <span class="portal-welcome-tag">Direct Communications</span>
+            <h1 class="portal-welcome-title">Physician Support & Clinical Concierge</h1>
+            <p class="portal-welcome-sub">Direct secure clinical messaging with your care team and sanctuary concierge.</p>
+          </div>
+        </div>
+
+        <!-- Section 1: Direct Clinical Concierge & Physician Message Thread -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 1: Secure Physician Message Thread</h2>
+              <p class="portal-section-sub">Encrypted communications with Dr. Rajeshwar Sen & Dr. Ananya Sharma.</p>
+            </div>
+            <span style="font-size: 0.75rem; color: #2e663a; font-weight: 700;">● Concierge Online (Typical reply: < 2 hrs)</span>
+          </div>
+
+          <div class="portal-chat-box">
+            <!-- Message 1 from Doctor -->
+            <div class="portal-chat-bubble portal-chat-in">
+              <div class="portal-chat-meta">
+                <strong>Dr. Rajeshwar Sen (Lead Yoga Therapist)</strong>
+                <span>Nov 12, 2026 • 04:15 PM</span>
+              </div>
+              "Eleanor, your pelvic leveling during yesterday's standing screening was remarkably stable. Please remember to keep knees soft during forward extensions to protect the sacral ligaments. Continue the Supta Baddha Konasana sequence every evening."
+            </div>
+
+            <!-- Message 2 from Patient -->
+            <div class="portal-chat-bubble portal-chat-out">
+              <div class="portal-chat-meta">
+                <strong>Eleanor Vance</strong>
+                <span>Nov 12, 2026 • 05:40 PM</span>
+              </div>
+              "Thank you Dr. Sen. The 10-minute diaphragmatic breathing before sleep has reduced morning thoracic tightness considerably. Looking forward to Friday's 1-on-1 session."
+            </div>
+
+            <!-- Message 3 from Doctor -->
+            <div class="portal-chat-bubble portal-chat-in">
+              <div class="portal-chat-meta">
+                <strong>Dr. Ananya Sharma (Chief of Balneology)</strong>
+                <span>Yesterday • 05:00 PM</span>
+              </div>
+              "Excellent progress, Eleanor. I have updated your hydrotherapy parameter for Saturday: we are introducing a chamomile mineral infusion finish to further support microvascular tone."
+            </div>
+
+            <!-- Message Compose Box -->
+            <div style="margin-top: 1rem; border-top: 1px solid var(--border-light); padding-top: 1.25rem;">
+              <textarea placeholder="Type a message or question for your attending care team..." rows="3" style="width: 100%; padding: 0.85rem; border-radius: 10px; border: 1px solid var(--border-medium); font-family: inherit; font-size: 0.88rem; box-sizing: border-box; background: var(--bg-surface); color: var(--text-main); resize: vertical;"></textarea>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.75rem;">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Encrypted medical communication • Monitored daily 08:00 AM – 06:30 PM EST</span>
+                <button class="portal-action-pill portal-action-primary" onclick="alert('Message sent to Dr. Sharma & Dr. Sen. Typical response within 2 hours.')">Send Message →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Sanctuary Triage, On-Duty Faculty & Emergency Advisory -->
+        <div class="portal-section-spacer">
+          <div class="portal-section-header">
+            <div>
+              <h2 class="portal-section-title">Section 2: Sanctuary Triage & On-Duty Faculty Directory</h2>
+              <p class="portal-section-sub">Direct extensions and in-sanctuary concierge contact information.</p>
+            </div>
+          </div>
+
+          <div class="portal-breakdown-grid">
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">🏥 Clinical Nursing Station & Triage</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin: 0 0 0.75rem 0;">
+                For immediate vital signs checks, blood pressure monitoring, or protocol queries during your stay at the sanctuary valley.
+              </p>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #a65830;">Internal Extension: #401 • Direct Line: +1 (555) 732-8483 ext 4</div>
+            </div>
+
+            <div class="portal-breakdown-card">
+              <h4 style="font-size: 1rem; color: #4a2e1b; margin-top: 0;">🌿 Sanctuary Concierge & Shala Booking Desk</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin: 0 0 0.75rem 0;">
+                For rescheduling private suites, booking airport zero-emission shuttles, or dietary adjustments at the sanctuary garden dining room.
+              </p>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #a65830;">Internal Extension: #402 • Direct Line: +1 (555) 732-8483 ext 2</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <!-- Drop to Top Button with Hover Effect -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Scroll to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

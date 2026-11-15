@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanctuary Spaces & Facilities | Verdant Life</title>
+  <meta name="description" content="Explore the spaces behind your wellness experience: yoga studios, hydrotherapy suites, consultation suites, and botanical gardens.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>
+    (function() {
+      if (localStorage.getItem('verdant-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      if (localStorage.getItem('verdant-direction') === 'rtl') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+    <!-- Navigation Header -->
+    <!-- Navigation Header with Home Dropdown -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+        <div class="brand-text">
+          <span class="brand-name">VERDANT LIFE</span>
+          <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" aria-expanded="false">
+              Home
+              <svg class="dropdown-arrow" width="11" height="11" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html" class="dropdown-link">Home 1 (Sanctuary Home)</a></li>
+              <li><a href="home-2.html" class="dropdown-link">Home 2 (Clinical & Retreat)</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="education.html" class="nav-link">Wellness Journey</a></li>
+          <li><a href="programs.html" class="nav-link">Signature Programs</a></li>
+          <li><a href="facilities.html" class="nav-link active">Sanctuary Spaces</a></li>
+          <li><a href="doctors.html" class="nav-link">Specialists</a></li>
+          <li><a href="journal.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <!-- Mobile / Tablet Menu Actions (Below Dashboard Navlink) -->
+          <li class="mobile-menu-actions">
+            <div class="mobile-theme-rtl-row">
+              <button class="icon-btn theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+              <button class="icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="login.html" class="btn btn-primary mobile-login-cta">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle-btn desktop-only-action" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn rtl-toggle-btn desktop-only-action" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm desktop-only-action">Login</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="page-hero" style="background-image: url('images/image-80.png');">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag">Biophilic Sanctuary Architecture</span>
+        <h1 class="page-hero-title">Explore the Spaces Behind<br class="hero-line-break">Your Wellness Experience</h1>
+        <p class="page-hero-desc">
+          Healing is intimately connected to environment. At Verdant Life, every room<br class="hero-line-break">
+          is an intentional architectural composition crafted with organic earthen plaster,<br class="hero-line-break">
+          native timber, natural daylighting, and acoustic serenity to support profound<br class="hero-line-break">
+          therapeutic restoration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Exactly 6 Core Facility Areas -->
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">The 6 Core Sanctuary Areas</span>
+        <h2 class="section-title">Environments Designed for Healing</h2>
+        <p class="section-subtitle">
+          Click any space to expand architectural details, therapeutic equipment specifications, and patient preparation guidelines.
+        </p>
+      </div>
+
+      <div class="grid-6">
+        <!-- 1. Therapeutic Yoga Studio -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-88.png" alt="High-end Iyengar yoga rope studio with arched ceilings and forest window">
+            <span class="card-media-badge">Area 01</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Movement Hall</span>
+            <h3 class="card-title">1. Therapeutic Yoga Studio</h3>
+            <p class="card-text">
+              Equipped with vaulted acoustic ceilings, timber wall-rope alignment systems (Iyengar shala), cork blocks, and expansive forest-canopy vistas.
+            </p>
+            <div class="card-benefit">
+              <strong>Environmental Feature:</strong> High-volume air exchange and non-toxic pine flooring to protect joints during prolonged practice.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openFacilityLightbox('Therapeutic Yoga Studio', 'images/image-88.png', 'Our flagship movement studio features wall-rope harnesses and high vaulted ceilings for therapeutic spinal decompression and breathwork.')">Expand View</button>
+              <a href="services.html#yoga" class="btn btn-primary btn-sm">Explore Classes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Naturopathy Treatment Room -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-82.png" alt="Naturopathy treatment room with massage examination bed and herb shelves">
+            <span class="card-media-badge">Area 02</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Clinical Therapy</span>
+            <h3 class="card-title">2. Naturopathy Treatment Room</h3>
+            <p class="card-text">
+              Private clinical treatment suites featuring padded massage beds, temperature-controlled towel warmers, and extensive apothecary dispensary shelving.
+            </p>
+            <div class="card-benefit">
+              <strong>Environmental Feature:</strong> Sound-insulated acoustic partitions and diffuse warm lighting to eliminate clinical anxiety.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openFacilityLightbox('Naturopathy Treatment Room', 'images/image-82.png', 'A serene clinical suite equipped for pelotherapy clay packs, body oil treatments, and botanical applications.')">Expand View</button>
+              <a href="services.html#naturopathy" class="btn btn-primary btn-sm">Explore Treatments</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Hydrotherapy Area -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-25.png" alt="Specialized holistic clinical therapy suite with hydro apparatus">
+            <span class="card-media-badge">Area 03</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Hydro-Balneology</span>
+            <h3 class="card-title">3. Hydrotherapy Area</h3>
+            <p class="card-text">
+              Dedicated hydro-suites equipped with specialized therapeutic bathtubs, precision temperature underwater jet hoses, and mineral salt infusion baths.
+            </p>
+            <div class="card-benefit">
+              <strong>Environmental Feature:</strong> Radiant floor heating and non-slip natural slate tiles for safe thermal transitions.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openFacilityLightbox('Hydrotherapy Area', 'images/image-25.png', 'Specialized balneotherapy tubs and water jet massage suites designed for safe circulatory stimulation.')">Expand View</button>
+              <a href="services.html#naturopathy" class="btn btn-primary btn-sm">Explore Hydro</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Consultation Room -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-19.png" alt="Modern clinic consultation suite and reception with wood panels">
+            <span class="card-media-badge">Area 04</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Physician Intake</span>
+            <h3 class="card-title">4. Consultation Room</h3>
+            <p class="card-text">
+              Intimate, dignified physician consulting suites featuring natural wood furnishings, botanical charts, private examination alcoves, and garden views.
+            </p>
+            <div class="card-benefit">
+              <strong>Environmental Feature:</strong> Comfortable unhurried seating designed for empathetic, comprehensive doctor-patient dialogue.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openFacilityLightbox('Consultation Room', 'images/image-19.png', 'Warm timber consulting suites where naturopathic doctors review health history and co-create lifestyle care plans.')">Expand View</button>
+              <a href="doctors.html" class="btn btn-primary btn-sm">Meet Doctors</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Meditation & Relaxation Space -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-83.png" alt="Grand vaulted earthen arch yoga and meditation hall with sunlight">
+            <span class="card-media-badge">Area 05</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Acoustic Stillness</span>
+            <h3 class="card-title">5. Meditation & Relaxation Space</h3>
+            <p class="card-text">
+              Grand vaulted sand-toned earthen arches, sun-washed timber floors, and individual meditation cushions arranged for quiet contemplation.
+            </p>
+            <div class="card-benefit">
+              <strong>Environmental Feature:</strong> Resonant acoustic properties tuned specifically for Tibetan singing bowl harmonics.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openFacilityLightbox('Meditation & Relaxation Space', 'images/image-83.png', 'Sweeping sand-toned vaulted arches and natural daylight providing an immersive sanctuary for silent contemplation.')">Expand View</button>
+              <a href="services.html#mind-body" class="btn btn-primary btn-sm">Explore Sessions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Botanical Wellness Garden -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-68.png" alt="Outdoor botanical medicinal herb garden with labeled plant beds">
+            <span class="card-media-badge">Area 06</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Living Apothecary</span>
+            <h3 class="card-title">6. Botanical Wellness Garden</h3>
+            <p class="card-text">
+              Over two acres of organic medicinal flora, labeled raised beds (sage, chamomile, tulsi, echinacea), sensory walking trails, and shade pergolas.
+            </p>
+            <div class="card-benefit">
+              <strong>Environmental Feature:</strong> Fragrant phytoncide-rich microclimate for restorative afternoon Shinrin-yoku walks.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openFacilityLightbox('Botanical Wellness Garden', 'images/image-68.png', 'Living outdoor apothecary featuring diverse healing herbs and peaceful walking trails.')">Expand View</button>
+              <a href="education.html" class="btn btn-primary btn-sm">Read Botany</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Architectural Sanctuaries (4 Even-Numbered Cards) -->
+  <section class="section-padding bg-almond">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Sanctuary Perspectives</span>
+        <h2 class="section-title">Architectural Highlights</h2>
+        <p class="section-subtitle">
+          Intimate architectural spaces curated for individual reflection, small-group breathwork, and sensory quietude.
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <!-- Space 1 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-87.png" alt="Bamboo yoga shala with woven ceiling and tropical forest view">
+            <span class="card-media-badge">Open Shala</span>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Bamboo Forest Shala</h4>
+            <p class="card-text">Naturally ventilated bamboo shala opening directly to tropical foliage for morning dawn pranayama.</p>
+            <div class="card-benefit">Zero artificial HVAC; 100% pure mountain air.</div>
+          </div>
+        </div>
+
+        <!-- Space 2 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-47.png" alt="Zen meditation room with textured plaster and open garden frame">
+            <span class="card-media-badge">Zen Alcove</span>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Wabi-Sabi Plaster Sanctuary</h4>
+            <p class="card-text">Tactile textured plaster walls framing open garden courtyards for quiet journaling and unhurried rest.</p>
+            <div class="card-benefit">Earthy grounding tones that lower sensory input.</div>
+          </div>
+        </div>
+
+        <!-- Space 3 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-49.png" alt="Modern serene meditation studio with sheer curtains and garden court">
+            <span class="card-media-badge">Light Studio</span>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Garden Court Studio</h4>
+            <p class="card-text">Blonde oak flooring with sheer linen drapes that soften direct sunlight during mid-day meditation.</p>
+            <div class="card-benefit">Gentle luminous ambient lighting without glare.</div>
+          </div>
+        </div>
+
+        <!-- Space 4 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-53.png" alt="Panoramic circular meditation room with curved glass looking out to garden">
+            <span class="card-media-badge">Solarium</span>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Circular Solarium</h4>
+            <p class="card-text">360-degree curved glass windows immersing practitioners in green landscape while resting on round rugs.</p>
+            <div class="card-benefit">Expansive visual horizons that quiet mental confinement.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architectural Feature Spotlight -->
+  <section class="section-padding-sm bg-cream">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 2.5rem;">
+        <div style="border-radius: var(--radius-md); overflow: hidden; height: 360px; box-shadow: var(--shadow-md);">
+          <img src="images/image-90.png" alt="Luxury biophilic spa interior with curved staircase and petal chandelier" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <span class="section-tag">Design Ethos</span>
+          <h2>Acoustic Stillness & Natural Light</h2>
+          <p style="color: var(--text-muted); line-height: 1.8;">
+            From the organic sweeping staircases to the living botanical walls and whisper-quiet circulation paths, every square meter of Verdant Life is designed to buffer you from external stress. Here, silence is not merely an absence of noise; it is a positive presence that invites your nervous system to rest.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html" class="btn btn-primary">Schedule a Center Tour</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+            <div class="brand-text">
+              <span class="brand-name">VERDANT LIFE</span>
+              <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+            </div>
+          </div>
+          <p class="footer-description">
+            A sanctuary dedicated to nature-inspired clinical wellness, classical yoga therapeutics, and sustainable holistic lifestyle guidance.
+          </p>
+          <!-- Sanctuary Social Media Channels -->
+          <div class="footer-social-links" aria-label="Sanctuary Social Media Channels">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Instagram" title="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Facebook" title="Connect on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on YouTube" title="Watch on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on LinkedIn" title="Follow our Clinical Board on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on X" title="Follow us on X">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Therapies</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#yoga">Therapeutic Yoga</a></li>
+            <li><a href="services.html#naturopathy">Naturopathy Treatments</a></li>
+            <li><a href="services.html#nutrition">Nutrition & Lifestyle</a></li>
+            <li><a href="services.html#mind-body">Mind & Body Wellness</a></li>
+            <li><a href="programs.html">Signature Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Patient Resources</h4>
+          <ul class="footer-links">
+            <li><a href="education.html">Wellness Journey Education</a></li>
+            <li><a href="doctors.html">Our Specialist Team</a></li>
+            <li><a href="facilities.html">Sanctuary Spaces</a></li>
+            <li><a href="journal.html">Wellness Journal</a></li>
+            <li><a href="dashboard.html">Patient Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visiting & Contact</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Request Consultation</a></li>
+            <li><a href="contact.html#hours">Visiting Hours</a></li>
+            <li><a href="contact.html#location">Sanctuary Directions</a></li>
+            <li><a href="about.html">About Our Heritage</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Verdant Life Naturopathy & Yoga Therapy Center. All rights reserved.</div>
+        <div>Natural Living • Authentic Compassion • Professional Guidance</div>
+      </div>
+
+      <div class="footer-disclaimer-notice">
+        <strong>Medical Disclaimer:</strong> The therapies, lifestyle programs, educational articles, and consultation suggestions provided by Verdant Life Naturopathy & Yoga Therapy Center are intended for general holistic wellbeing, relaxation, and lifestyle enhancement. They do not claim to diagnose, cure, mitigate, or guarantee clinical outcomes for medical conditions.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Modal Container -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title" style="margin: 0; font-size: 1.3rem;">Modal Header</h3>
+        <button class="modal-close" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="modal-body-content" class="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <!-- Drop to Top Button with Hover Effect -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Scroll to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
+

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Wellness Experiences | Verdant Life</title>
+  <meta name="description" content="Explore our curated collection of 6 signature wellness programs blending movement therapy, naturopathic immersions, and physician consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>
+    (function() {
+      if (localStorage.getItem('verdant-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      if (localStorage.getItem('verdant-direction') === 'rtl') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+    <!-- Navigation Header -->
+    <!-- Navigation Header with Home Dropdown -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+        <div class="brand-text">
+          <span class="brand-name">VERDANT LIFE</span>
+          <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" aria-expanded="false">
+              Home
+              <svg class="dropdown-arrow" width="11" height="11" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html" class="dropdown-link">Home 1 (Sanctuary Home)</a></li>
+              <li><a href="home-2.html" class="dropdown-link">Home 2 (Clinical & Retreat)</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="education.html" class="nav-link">Wellness Journey</a></li>
+          <li><a href="programs.html" class="nav-link active">Signature Programs</a></li>
+          <li><a href="facilities.html" class="nav-link">Sanctuary Spaces</a></li>
+          <li><a href="doctors.html" class="nav-link">Specialists</a></li>
+          <li><a href="journal.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <!-- Mobile / Tablet Menu Actions (Below Dashboard Navlink) -->
+          <li class="mobile-menu-actions">
+            <div class="mobile-theme-rtl-row">
+              <button class="icon-btn theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+              <button class="icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="login.html" class="btn btn-primary mobile-login-cta">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle-btn desktop-only-action" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn rtl-toggle-btn desktop-only-action" aria-label="Toggle text direction" title="Toggle RTL / LTR">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm desktop-only-action">Login</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="page-hero" style="background-image: url('images/image-30.png');">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag">Curated Retreats & Journeys</span>
+        <h1 class="page-hero-title">Explore Our Signature<br class="hero-line-break">Wellness Experiences</h1>
+        <p class="page-hero-desc">
+          Our multi-modality programs provide structured pathways for individuals seeking<br class="hero-line-break">
+          to pause, re-calibrate, and cultivate durable health habits. Led by experienced<br class="hero-line-break">
+          naturopathic physicians and certified yoga therapists, each program harmonizes<br class="hero-line-break">
+          movement, natural therapies, and lifestyle education.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Exactly 6 Signature Program Presentations -->
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Core Program Roster</span>
+        <h2 class="section-title">Six Distinct Paths to Wholeness</h2>
+        <p class="section-subtitle">
+          Choose a program calibrated to your personal intentions. Every program is customized during intake to match your physical readiness and health history.
+        </p>
+      </div>
+
+      <div class="grid-6">
+        <!-- 01 Mindful Movement Experience -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-117.png" alt="Morning outdoor yoga Gate Pose on sunny lawn">
+            <span class="card-media-badge">Program 01</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Movement Therapy</span>
+            <h3 class="card-title">01 — Mindful Movement Experience</h3>
+            <p class="card-text">
+              A guided yoga-focused experience featuring gentle movement, breathing awareness, and mindful practice to liberate physical stiffness and cultivate joint lightness.
+            </p>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Experience Highlights:</strong>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; color: var(--text-muted);">
+                <li>Postural biomechanics & gentle spinal sequencing</li>
+                <li>Pranayama breath harmonization</li>
+                <li>Props-assisted joint decompression</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Included Activities:</strong>
+              <p style="color: var(--text-muted); margin: 0;">2 Therapeutic Yoga Sessions, 1 Breathwork Circle, Guided Garden Walk.</p>
+            </div>
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--primary-walnut); margin-bottom: 1.25rem;">
+              Duration: Full Day (6 Hours) or 3-Day Immersion
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewProgramDetails('Mindful Movement Experience', 'Full Day or 3-Day Immersion', 'images/image-117.png', 'A guided yoga-focused experience featuring gentle movement, breathing awareness and mindful practice.')">View Details</button>
+              <a href="contact.html?program=Mindful%20Movement%20Experience" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 Natural Wellness Experience -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-4.png" alt="Shirodhara warm medicated herbal oil therapy on wooden table">
+            <span class="card-media-badge">Program 02</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Nature Cure Immersion</span>
+            <h3 class="card-title">02 — Natural Wellness Experience</h3>
+            <p class="card-text">
+              An experiential introduction to classical naturopathy practices and nature-inspired wellness approaches designed to support circulatory vitality.
+            </p>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Experience Highlights:</strong>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; color: var(--text-muted);">
+                <li>Traditional elemental hydrotherapy bath</li>
+                <li>Therapeutic mineral mud pack application</li>
+                <li>Shirodhara warm botanical oil relaxation</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Included Activities:</strong>
+              <p style="color: var(--text-muted); margin: 0;">Physician Intake, Hydro Jet Session, Pelotherapy Wrap, Herbal Tea Service.</p>
+            </div>
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--primary-walnut); margin-bottom: 1.25rem;">
+              Duration: Single Intensive Day (7 Hours)
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewProgramDetails('Natural Wellness Experience', 'Single Intensive Day (7 Hours)', 'images/image-4.png', 'An introduction to naturopathy practices and nature-inspired wellness approaches.')">View Details</button>
+              <a href="contact.html?program=Natural%20Wellness%20Experience" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Relaxation Ritual -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-84.png" alt="Serene holistic massage therapy room with wooden bed and plants">
+            <span class="card-media-badge">Program 03</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Nervous System Reset</span>
+            <h3 class="card-title">03 — Relaxation Ritual</h3>
+            <p class="card-text">
+              A peaceful experience featuring guided relaxation, sound immersion, and mindfulness practices dedicated to soothing mental fatigue.
+            </p>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Experience Highlights:</strong>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; color: var(--text-muted);">
+                <li>Propped restorative postures with eye pillows</li>
+                <li>Tibetan & crystal singing bowl sound bath</li>
+                <li>Gentle Abhyanga warm botanical massage</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Included Activities:</strong>
+              <p style="color: var(--text-muted); margin: 0;">Restorative Yoga Class, Sound Immersion, 60-min Oil Body Therapy, Herbal Elixir.</p>
+            </div>
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--primary-walnut); margin-bottom: 1.25rem;">
+              Duration: Half-Day Retreat (4.5 Hours)
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewProgramDetails('Relaxation Ritual', 'Half-Day Retreat (4.5 Hours)', 'images/image-84.png', 'A peaceful experience featuring guided relaxation and mindfulness practices.')">View Details</button>
+              <a href="contact.html?program=Relaxation%20Ritual" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 Healthy Living Experience -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-95.png" alt="Banana leaf vegetarian wellness meal with terracotta chaas pot">
+            <span class="card-media-badge">Program 04</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Lifestyle Architecture</span>
+            <h3 class="card-title">04 — Healthy Living Experience</h3>
+            <p class="card-text">
+              A lifestyle-focused program exploring balanced routines, everyday wellness habits, and practical home strategies for sustainable wellbeing.
+            </p>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Experience Highlights:</strong>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; color: var(--text-muted);">
+                <li>Circadian rhythm & sleep hygiene assessment</li>
+                <li>Sattvic culinary dining experience</li>
+                <li>Stress buffering & daily ritual design workshop</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Included Activities:</strong>
+              <p style="color: var(--text-muted); margin: 0;">2 Lifestyle Workshops, Sattvic Lunch, Reflexology Walk, Personal Home Routine Plan.</p>
+            </div>
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--primary-walnut); margin-bottom: 1.25rem;">
+              Duration: 2-Day Practical Intensive
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewProgramDetails('Healthy Living Experience', '2-Day Practical Intensive', 'images/image-95.png', 'A lifestyle-focused program exploring balanced routines and everyday wellness habits.')">View Details</button>
+              <a href="contact.html?program=Healthy%20Living%20Experience" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 Nutrition Awareness Experience -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-65.png" alt="Immunity remedy ingredients with ginger, honey, lemon, cinnamon, tincture">
+            <span class="card-media-badge">Program 05</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Digestive Health</span>
+            <h3 class="card-title">05 — Nutrition Awareness</h3>
+            <p class="card-text">
+              An educational experience focused on healthy eating habits, whole-food plant nutrition, and constructive dialogue on food synergy.
+            </p>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Experience Highlights:</strong>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; color: var(--text-muted);">
+                <li>Rainbow plant nutrition & antioxidant guidance</li>
+                <li>Live herbal infusion brewing demonstration</li>
+                <li>Mindful eating practice and digestion education</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Included Activities:</strong>
+              <p style="color: var(--text-muted); margin: 0;">Nutritionist Intake, Botanical Tea Tasting, Garden Herb Tour, 3-Week Meal Framework.</p>
+            </div>
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--primary-walnut); margin-bottom: 1.25rem;">
+              Duration: 1-Day Workshop + Online Review
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewProgramDetails('Nutrition Awareness Experience', '1-Day Workshop + Online Review', 'images/image-65.png', 'An educational experience focused on healthy eating habits and nutrition discussions.')">View Details</button>
+              <a href="contact.html?program=Nutrition%20Awareness%20Experience" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 Personalized Wellness Journey -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/image-73.png" alt="Doctor in white coat consulting patient seated in Sukhasana on mat">
+            <span class="card-media-badge">Program 06</span>
+          </div>
+          <div class="card-body">
+            <span class="card-meta">Physician Guided</span>
+            <h3 class="card-title">06 — Personalized Journey</h3>
+            <p class="card-text">
+              A comprehensive consultation-led experience exploring relevant wellness interests, personal mobility levels, and suitable activities.
+            </p>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Experience Highlights:</strong>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; color: var(--text-muted);">
+                <li>Multi-disciplinary physician evaluation</li>
+                <li>Customized mix of hydrotherapy, yoga, and diet</li>
+                <li>Dedicated clinical care coordinator</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-body);">
+              <strong>Included Activities:</strong>
+              <p style="color: var(--text-muted); margin: 0;">Comprehensive Intake, 4 Curated Therapies, Mid-Program Review, Digital Dashboard Integration.</p>
+            </div>
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--primary-walnut); margin-bottom: 1.25rem;">
+              Duration: 5-Day or 7-Day Bespoke Pathway
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm" onclick="viewProgramDetails('Personalized Wellness Journey', '5-Day or 7-Day Bespoke Pathway', 'images/image-73.png', 'A consultation-led experience exploring relevant wellness interests and suitable activities.')">View Details</button>
+              <a href="contact.html?program=Personalized%20Wellness%20Journey" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Immersion Highlights (4 Even-Numbered Cards) -->
+    <!-- Experiential Modules: What Happens Inside Our Immersions (Cinematic Expanding Accordion) -->
+  <section class="section-padding bg-almond immersion-modules-section" id="experiential-modules">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Experiential Modules</span>
+        <h2 class="section-title">What Happens Inside Our Immersions</h2>
+        <p class="section-subtitle">
+          Every signature retreat blends four clinical pillars: private biomechanical alignment, hydrothermal recovery, open-air nature immersion, and living garden nutrition.
+        </p>
+      </div>
+
+      <!-- Quick Selector Tab Dock -->
+      <div class="immersion-tabs-dock" role="tablist" aria-label="Experiential Module Tabs">
+        <button class="immersion-tab-btn active" onclick="setImmersionPanel(0)" role="tab" aria-selected="true">
+          <span class="tab-num">01</span>
+          <span>Alignment & Posture</span>
+        </button>
+        <button class="immersion-tab-btn" onclick="setImmersionPanel(1)" role="tab" aria-selected="false">
+          <span class="tab-num">02</span>
+          <span>Deep Jet Hydro-Tone</span>
+        </button>
+        <button class="immersion-tab-btn" onclick="setImmersionPanel(2)" role="tab" aria-selected="false">
+          <span class="tab-num">03</span>
+          <span>Pondside Pavilion</span>
+        </button>
+        <button class="immersion-tab-btn" onclick="setImmersionPanel(3)" role="tab" aria-selected="false">
+          <span class="tab-num">04</span>
+          <span>Garden Nourishment</span>
+        </button>
+      </div>
+
+      <!-- 4-Panel Expanding Accordion Stage -->
+      <div class="immersion-accordion-stage" id="immersionStage">
+        <!-- Panel 01: Alignment -->
+        <div class="immersion-panel active" data-index="0" onclick="setImmersionPanel(0)">
+          <div class="immersion-panel-media">
+            <img src="images/image-108.png" alt="One-on-one yoga therapy Warrior II alignment session">
+          </div>
+          <div class="immersion-panel-overlay">
+            <!-- Collapsed State Header -->
+            <div class="immersion-collapsed-bar">
+              <span class="collapsed-num">01</span>
+              <span class="collapsed-title-vertical">Alignment & Posture</span>
+              <span class="collapsed-icon">✦</span>
+            </div>
+
+            <!-- Expanded State Details -->
+            <div class="immersion-expanded-content">
+              <div class="immersion-expanded-top">
+                <span class="immersion-tag-badge">Alignment & Biomechanics</span>
+                <span class="immersion-seq">Module 01 / 04</span>
+              </div>
+              <div class="immersion-expanded-bottom">
+                <h3 class="immersion-title">1-on-1 Posture Refinement</h3>
+                <div class="immersion-subtitle">Individual Spinal Decompression & Joint Geometry</div>
+                <p class="immersion-desc">
+                  Specialized therapists gently assess and correct joint alignment and spinal posture. Through customized therapeutic yoga adjustments, every stretch is tailored to protect vulnerable spinal discs and restore natural vertical balance.
+                </p>
+                <div class="immersion-tags">
+                  <span class="immersion-pill">Spinal Decompression</span>
+                  <span class="immersion-pill">Gait Calibration</span>
+                  <span class="immersion-pill">Disc Protection</span>
+                </div>
+                <div class="immersion-benefit-box">
+                  <strong>Clinical Benefit:</strong> Ensures every stretch is biomechanically safe, customized, and neutralizes compensatory muscle tension.
+                </div>
+                <div class="immersion-actions">
+                  <button class="immersion-btn-primary" onclick="event.stopPropagation(); openModuleModal(0)">Explore Module Dossier →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 02: Circulation -->
+        <div class="immersion-panel" data-index="1" onclick="setImmersionPanel(1)">
+          <div class="immersion-panel-media">
+            <img src="images/image-59.png" alt="Hydrotherapy bathtub with underwater jet massage">
+          </div>
+          <div class="immersion-panel-overlay">
+            <!-- Collapsed State Header -->
+            <div class="immersion-collapsed-bar">
+              <span class="collapsed-num">02</span>
+              <span class="collapsed-title-vertical">Deep Jet Hydro-Tone</span>
+              <span class="collapsed-icon">✦</span>
+            </div>
+
+            <!-- Expanded State Details -->
+            <div class="immersion-expanded-content">
+              <div class="immersion-expanded-top">
+                <span class="immersion-tag-badge">Hydrothermal Circulation</span>
+                <span class="immersion-seq">Module 02 / 04</span>
+              </div>
+              <div class="immersion-expanded-bottom">
+                <h3 class="immersion-title">Deep Jet Hydro-Tone</h3>
+                <div class="immersion-subtitle">Microvascular Stimulation & Cellular Oxygenation</div>
+                <p class="immersion-desc">
+                  Specialized thermal hydrotherapy tubs stimulate microvascular beds through temperature-calibrated aquatic jets. Gentle hydrostatic buoyancy offloads joint pressure, driving venous return and muscular replenishment.
+                </p>
+                <div class="immersion-tags">
+                  <span class="immersion-pill">Contrast Jet Massage</span>
+                  <span class="immersion-pill">Venous Assist</span>
+                  <span class="immersion-pill">Mineral Thermal Water</span>
+                </div>
+                <div class="immersion-benefit-box">
+                  <strong>Clinical Benefit:</strong> Relieves lactic soreness, calms tight shoulder bands, and accelerates deep cellular tissue recovery.
+                </div>
+                <div class="immersion-actions">
+                  <button class="immersion-btn-primary" onclick="event.stopPropagation(); openModuleModal(1)">Explore Module Dossier →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 03: Nature Healing -->
+        <div class="immersion-panel" data-index="2" onclick="setImmersionPanel(2)">
+          <div class="immersion-panel-media">
+            <img src="images/image-101.png" alt="Outdoor tropical spa therapy setup near natural pond">
+          </div>
+          <div class="immersion-panel-overlay">
+            <!-- Collapsed State Header -->
+            <div class="immersion-collapsed-bar">
+              <span class="collapsed-num">03</span>
+              <span class="collapsed-title-vertical">Pondside Pavilion</span>
+              <span class="collapsed-icon">✦</span>
+            </div>
+
+            <!-- Expanded State Details -->
+            <div class="immersion-expanded-content">
+              <div class="immersion-expanded-top">
+                <span class="immersion-tag-badge">Nature Healing & Acoustics</span>
+                <span class="immersion-seq">Module 03 / 04</span>
+              </div>
+              <div class="immersion-expanded-bottom">
+                <h3 class="immersion-title">Pondside Therapy Pavilion</h3>
+                <div class="immersion-subtitle">Outdoor Massage & Biophilic Sensory Immersion</div>
+                <p class="immersion-desc">
+                  Outdoor massage and steam therapies conducted next to natural lily ponds and living botanical groves. Ambient natural soundscapes of flowing water and gentle breeze harmonize brainwave patterns into calm alpha states.
+                </p>
+                <div class="immersion-tags">
+                  <span class="immersion-pill">Open-Air Treatment</span>
+                  <span class="immersion-pill">Ambient Water Acoustics</span>
+                  <span class="immersion-pill">Herbal Warm Oils</span>
+                </div>
+                <div class="immersion-benefit-box">
+                  <strong>Clinical Benefit:</strong> Harmonizes mental focus, reduces salivary cortisol, and restores cognitive energy through ambient nature acoustics.
+                </div>
+                <div class="immersion-actions">
+                  <button class="immersion-btn-primary" onclick="event.stopPropagation(); openModuleModal(2)">Explore Module Dossier →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 04: Farm-to-Table -->
+        <div class="immersion-panel" data-index="3" onclick="setImmersionPanel(3)">
+          <div class="immersion-panel-media">
+            <img src="images/image-72.png" alt="Six cardboard punnets of fresh harvested culinary and healing herbs">
+          </div>
+          <div class="immersion-panel-overlay">
+            <!-- Collapsed State Header -->
+            <div class="immersion-collapsed-bar">
+              <span class="collapsed-num">04</span>
+              <span class="collapsed-title-vertical">Garden Nourishment</span>
+              <span class="collapsed-icon">✦</span>
+            </div>
+
+            <!-- Expanded State Details -->
+            <div class="immersion-expanded-content">
+              <div class="immersion-expanded-top">
+                <span class="immersion-tag-badge">Farm-to-Table Nutrition</span>
+                <span class="immersion-seq">Module 04 / 04</span>
+              </div>
+              <div class="immersion-expanded-bottom">
+                <h3 class="immersion-title">Garden Fresh Nourishment</h3>
+                <div class="immersion-subtitle">Live Micronutrients & Bioactive Botanical Infusions</div>
+                <p class="immersion-desc">
+                  Meals and herbal decoctions prepared using freshly harvested botanicals gathered directly from our sanctuary beds. Living enzymes, intact polyphenols, and wholesome fiber nourish your enteric system without synthetic additives.
+                </p>
+                <div class="immersion-tags">
+                  <span class="immersion-pill">Living Enzymes</span>
+                  <span class="immersion-pill">Whole Food Sourcing</span>
+                  <span class="immersion-pill">Cold-Pressed Decoctions</span>
+                </div>
+                <div class="immersion-benefit-box">
+                  <strong>Clinical Benefit:</strong> Delivers maximum live micronutrient value in every dish, relieving gut strain and invigorating vitality.
+                </div>
+                <div class="immersion-actions">
+                  <button class="immersion-btn-primary" onclick="event.stopPropagation(); openModuleModal(3)">Explore Module Dossier →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Guarantees Strip -->
+      <div class="immersion-guarantees-strip">
+        <div class="immersion-guarantee-item">
+          <div class="guarantee-icon">✦</div>
+          <div class="guarantee-text">
+            <strong>1-on-1 Therapist</strong>
+            <span>Dedicated personal clinical guidance</span>
+          </div>
+        </div>
+        <div class="immersion-guarantee-item">
+          <div class="guarantee-icon">💧</div>
+          <div class="guarantee-text">
+            <strong>90% Joint Buoyancy</strong>
+            <span>Hydrostatic offload for joint comfort</span>
+          </div>
+        </div>
+        <div class="immersion-guarantee-item">
+          <div class="guarantee-icon">🌿</div>
+          <div class="guarantee-text">
+            <strong>Acoustic Nature</strong>
+            <span>Restorative sensory peace beside lily ponds</span>
+          </div>
+        </div>
+        <div class="immersion-guarantee-item">
+          <div class="guarantee-icon">🌱</div>
+          <div class="guarantee-text">
+            <strong>100% Living Garden</strong>
+            <span>Freshly harvested botanical nourishment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Circadian Immersion Architecture: A Day in Your Wellness Journey -->
+  <section class="section-padding bg-cream circadian-journey-section" id="circadian-journey">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Immersion Architecture</span>
+        <h2 class="section-title">A Day in Your Circadian Wellness Journey</h2>
+        <p class="section-subtitle">
+          How each hour is deliberately synchronized with your body's natural biorhythms for restorative physiological recovery.
+        </p>
+      </div>
+
+      <!-- Circadian Phase Dock (Pill Selectors) -->
+      <div class="circadian-phase-dock" role="tablist" aria-label="Circadian Phase Navigation">
+        <button class="circadian-phase-btn active" onclick="setCircadianPhase(0)" role="tab" aria-selected="true">
+          <span class="phase-time">06:00 AM</span>
+          <span class="phase-name">Pranic Awakening</span>
+        </button>
+        <button class="circadian-phase-btn" onclick="setCircadianPhase(1)" role="tab" aria-selected="false">
+          <span class="phase-time">08:30 AM</span>
+          <span class="phase-name">Elemental Nature-Cure</span>
+        </button>
+        <button class="circadian-phase-btn" onclick="setCircadianPhase(2)" role="tab" aria-selected="false">
+          <span class="phase-time">12:30 PM</span>
+          <span class="phase-name">Botanical Dining</span>
+        </button>
+        <button class="circadian-phase-btn" onclick="setCircadianPhase(3)" role="tab" aria-selected="false">
+          <span class="phase-time">04:00 PM</span>
+          <span class="phase-name">Restorative Yoga</span>
+        </button>
+        <button class="circadian-phase-btn" onclick="setCircadianPhase(4)" role="tab" aria-selected="false">
+          <span class="phase-time">07:30 PM</span>
+          <span class="phase-name">Twilight Meditation</span>
+        </button>
+      </div>
+
+      <!-- Dynamic Circadian Showcase Card -->
+      <div class="circadian-showcase-card" id="circadianShowcase">
+        <div class="circadian-media">
+          <img id="circadianImg" src="images/image-16.png" alt="Dawn sunrise mountain view yoga deck">
+          <span class="circadian-media-badge" id="circadianTimeBadge">06:00 AM — Dawn Photic Lux</span>
+          <span class="circadian-media-element" id="circadianElementBadge">Elemental Phase: Prana & Sun</span>
+        </div>
+        <div class="circadian-content">
+          <span class="circadian-meta" id="circadianMeta">Phase 01 / 05 • Circadian Reset</span>
+          <h3 class="circadian-title" id="circadianTitle">Pranic Awakening & Photic Alignment</h3>
+          <p class="circadian-desc" id="circadianDesc">
+            Welcoming morning photons on our panoramic open-air terrace. Morning outdoor lux (1,000–10,000 lux) activates intrinsically photosensitive retinal ganglion cells, signaling the suprachiasmatic nucleus to reset endocrine timing, calibrate healthy cortisol release, and promote vibrant daytime alertness.
+          </p>
+          <div class="circadian-activities" id="circadianActivities">
+            <span class="circadian-act-pill">Sunrise Anulom Vilom</span>
+            <span class="circadian-act-pill">Retinal Photic Exposure</span>
+            <span class="circadian-act-pill">Warm Copper Water Hydration</span>
+          </div>
+          <div class="circadian-benefit" id="circadianBenefit">
+            <strong>Biological Target:</strong> Resets master circadian clock genes (CLOCK/BMAL1) and calibrates morning cortisol awakening response.
+          </div>
+          <div class="circadian-actions">
+            <a href="contact.html?inquiry=Signature%20Retreat%20Schedule" class="btn btn-primary btn-sm">Enquire About Retreat Schedule →</a>
+            <a href="services.html#mind-body" class="btn btn-secondary btn-sm">View Mind-Body Therapies</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biorhythm Clock Rhythm Strip -->
+      <div class="circadian-biorhythm-strip">
+        <div class="biorhythm-step active" id="bioStep0">
+          <div class="biorhythm-step-time">06:00 - 08:00</div>
+          <div class="biorhythm-step-name">Cortisol Awakening</div>
+        </div>
+        <div class="biorhythm-step" id="bioStep1">
+          <div class="biorhythm-step-time">08:30 - 11:30</div>
+          <div class="biorhythm-step-name">Tissue Detox & Hydro</div>
+        </div>
+        <div class="biorhythm-step" id="bioStep2">
+          <div class="biorhythm-step-time">12:30 - 14:30</div>
+          <div class="biorhythm-step-name">Enzymatic Digestion</div>
+        </div>
+        <div class="biorhythm-step" id="bioStep3">
+          <div class="biorhythm-step-time">16:00 - 18:00</div>
+          <div class="biorhythm-step-name">Vagal Parasympathetic</div>
+        </div>
+        <div class="biorhythm-step" id="bioStep4">
+          <div class="biorhythm-step-time">19:30 - 21:30</div>
+          <div class="biorhythm-step-name">Melatonin Synthesis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-symbol"><img src="images/logo.png" alt="Verdant Life Logo"></div>
+            <div class="brand-text">
+              <span class="brand-name">VERDANT LIFE</span>
+              <span class="brand-tagline">Naturopathy & Yoga Therapy</span>
+            </div>
+          </div>
+          <p class="footer-description">
+            A sanctuary dedicated to nature-inspired clinical wellness, classical yoga therapeutics, and sustainable holistic lifestyle guidance.
+          </p>
+          <!-- Sanctuary Social Media Channels -->
+          <div class="footer-social-links" aria-label="Sanctuary Social Media Channels">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Instagram" title="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on Facebook" title="Connect on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on YouTube" title="Watch on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on LinkedIn" title="Follow our Clinical Board on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Verdant Life on X" title="Follow us on X">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Therapies</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#yoga">Therapeutic Yoga</a></li>
+            <li><a href="services.html#naturopathy">Naturopathy Treatments</a></li>
+            <li><a href="services.html#nutrition">Nutrition & Lifestyle</a></li>
+            <li><a href="services.html#mind-body">Mind & Body Wellness</a></li>
+            <li><a href="programs.html">Signature Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Patient Resources</h4>
+          <ul class="footer-links">
+            <li><a href="education.html">Wellness Journey Education</a></li>
+            <li><a href="doctors.html">Our Specialist Team</a></li>
+            <li><a href="facilities.html">Sanctuary Spaces</a></li>
+            <li><a href="journal.html">Wellness Journal</a></li>
+            <li><a href="dashboard.html">Patient Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visiting & Contact</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Request Consultation</a></li>
+            <li><a href="contact.html#hours">Visiting Hours</a></li>
+            <li><a href="contact.html#location">Sanctuary Directions</a></li>
+            <li><a href="about.html">About Our Heritage</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Verdant Life Naturopathy & Yoga Therapy Center. All rights reserved.</div>
+        <div>Natural Living • Authentic Compassion • Professional Guidance</div>
+      </div>
+
+      <div class="footer-disclaimer-notice">
+        <strong>Medical Disclaimer:</strong> The therapies, lifestyle programs, educational articles, and consultation suggestions provided by Verdant Life Naturopathy & Yoga Therapy Center are intended for general holistic wellbeing, relaxation, and lifestyle enhancement. They do not claim to diagnose, cure, mitigate, or guarantee clinical outcomes for medical conditions.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Modal Container -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title" style="margin: 0; font-size: 1.3rem;">Modal Header</h3>
+        <button class="modal-close" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="modal-body-content" class="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <!-- Drop to Top Button with Hover Effect -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Scroll to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
+
