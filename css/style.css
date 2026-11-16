@@ -1518,7 +1518,14 @@ img {
   .sig-card-media {
     width: 100%;
     max-width: 100%;
-    height: 220px;
+    height: clamp(280px, 44vw, 360px);
+  }
+
+  .sig-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .sig-card-title {
@@ -1527,7 +1534,7 @@ img {
 
   /* Keep side arrows vertically centered on media image to prevent overlapping with text */
   .sig-nav-btn {
-    top: 130px !important;
+    top: clamp(140px, 22vw, 180px) !important;
     transform: translateY(-50%) !important;
     width: 44px !important;
     height: 44px !important;
@@ -2267,7 +2274,13 @@ img {
   }
 
   .arch-visual-frame {
-    height: 320px;
+    height: clamp(320px, 48vw, 420px);
+  }
+  .arch-visual-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -2696,7 +2709,14 @@ img {
   .nat-slide-media {
     width: 100%;
     flex: none;
-    height: 240px;
+    height: clamp(280px, 44vw, 380px);
+  }
+
+  .nat-slide-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .nat-slide-content {
@@ -2709,7 +2729,7 @@ img {
 
   /* Keep side arrows vertically centered on media image to prevent overlapping with text */
   .nat-nav-btn {
-    top: 120px !important;
+    top: clamp(140px, 22vw, 190px) !important;
     transform: translateY(-50%) !important;
     width: 44px !important;
     height: 44px !important;
@@ -3947,7 +3967,13 @@ img {
   .journal-hero-media {
     width: 100%;
     flex: none;
-    height: 260px;
+    height: clamp(280px, 44vw, 380px);
+  }
+  .journal-hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   .journal-hero-body {
     padding: 2rem 1.75rem;
@@ -4338,7 +4364,13 @@ img {
   .circadian-media {
     width: 100%;
     flex: none;
-    height: 260px;
+    height: clamp(280px, 44vw, 380px);
+  }
+  .circadian-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   .circadian-content {
     padding: 2rem 1.5rem;
@@ -5063,6 +5095,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.6s ease;
 }
 
@@ -5309,10 +5342,22 @@ img {
     align-items: center;
     gap: 3.5rem;
   }
-  .specialist-visual-card,
-  .specialist-detail-card {
-    max-width: 100%;
+  .specialist-visual-card {
+    max-width: 480px;
     width: 100%;
+    margin: 0 auto;
+  }
+  .specialist-detail-card {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .specialist-photo-frame {
+    width: 100%;
+    height: clamp(350px, 50vw, 420px);
+  }
+  .specialist-photo-frame img {
+    object-position: center top;
   }
   .specialist-sync-btn {
     top: auto;
@@ -10038,6 +10083,84 @@ textarea.form-control {
     gap: 0.5rem !important;
     width: 100% !important;
     margin-bottom: 0.75rem !important;
+  }
+
+  /* ==========================================================================
+     Tablet View (768px): Full & Fit Alignment for Images across all pages
+     Prevents cropped heads / over-stretched widescreen distortion on cards
+     ========================================================================== */
+  .specialist-visual-card {
+    max-width: 480px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .specialist-photo-frame {
+    width: 100% !important;
+    height: clamp(350px, 50vw, 420px) !important;
+  }
+  .specialist-photo-frame img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+
+  .sig-card-media {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: clamp(280px, 44vw, 360px) !important;
+  }
+  .sig-card-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .nat-slide-media {
+    width: 100% !important;
+    flex: none !important;
+    height: clamp(280px, 44vw, 380px) !important;
+  }
+  .nat-slide-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .circadian-media {
+    width: 100% !important;
+    flex: none !important;
+    height: clamp(280px, 44vw, 380px) !important;
+  }
+  .circadian-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .journal-hero-media {
+    width: 100% !important;
+    flex: none !important;
+    height: clamp(280px, 44vw, 380px) !important;
+  }
+  .journal-hero-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .arch-visual-frame {
+    height: clamp(320px, 48vw, 420px) !important;
+  }
+  .arch-visual-frame img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
   }
 
   /* Same Box Size for Activity & Tag Pill Buttons on Mobile across all pages */
