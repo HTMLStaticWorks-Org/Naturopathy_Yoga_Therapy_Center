@@ -7564,6 +7564,17 @@ body.portal-body {
   .portal-timeline-step {
     padding: 1rem 0.85rem !important;
     gap: 0.85rem !important;
+    align-items: center !important;
+  }
+
+  .portal-step-number {
+    align-self: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    line-height: 1 !important;
+    flex-shrink: 0 !important;
   }
 
   .portal-step-header {
