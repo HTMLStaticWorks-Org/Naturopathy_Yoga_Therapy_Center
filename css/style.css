@@ -1853,12 +1853,72 @@ img {
     font-size: 1.35rem;
   }
 
+  /* Keep side arrows vertically centered on upper photo area to eliminate text overlap */
+  .coverflow-nav-btn {
+    top: 105px !important;
+    transform: translateY(-50%) !important;
+    width: 44px !important;
+    height: 44px !important;
+    box-shadow: 0 4px 16px rgba(36, 22, 14, 0.22) !important;
+  }
+
   .coverflow-prev {
-    left: 4px;
+    left: 12px !important;
   }
 
   .coverflow-next {
-    right: 4px;
+    right: 12px !important;
+  }
+
+  [dir="rtl"] .coverflow-prev {
+    left: auto !important;
+    right: 12px !important;
+    transform: translateY(-50%) scaleX(-1) !important;
+  }
+
+  [dir="rtl"] .coverflow-next {
+    right: auto !important;
+    left: 12px !important;
+    transform: translateY(-50%) scaleX(-1) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .coverflow-stage {
+    height: 380px;
+  }
+
+  .coverflow-card {
+    width: 280px;
+    height: 340px;
+  }
+
+  .coverflow-title {
+    font-size: 1.22rem;
+  }
+
+  .coverflow-nav-btn {
+    top: 95px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .coverflow-prev {
+    left: 8px !important;
+  }
+
+  .coverflow-next {
+    right: 8px !important;
+  }
+
+  [dir="rtl"] .coverflow-prev {
+    left: auto !important;
+    right: 8px !important;
+  }
+
+  [dir="rtl"] .coverflow-next {
+    right: auto !important;
+    left: 8px !important;
   }
 }
 
