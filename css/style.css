@@ -3618,6 +3618,18 @@ img {
   flex-wrap: wrap;
 }
 
+.circadian-actions .btn-secondary {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.circadian-actions .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.22) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
 .circadian-biorhythm-strip {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
