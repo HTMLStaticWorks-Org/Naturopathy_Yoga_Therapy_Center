@@ -602,41 +602,82 @@
           <!-- Calendar Strip -->
           <div class="portal-calendar-strip">
             <div class="portal-calendar-grid">
-              <div class="portal-cal-day-label">Mon 10</div>
-              <div class="portal-cal-day-label">Tue 11</div>
-              <div class="portal-cal-day-label">Wed 12</div>
-              <div class="portal-cal-day-label active">Thu 13 (Today)</div>
-              <div class="portal-cal-day-label">Fri 14</div>
-              <div class="portal-cal-day-label">Sat 15</div>
-              <div class="portal-cal-day-label">Sun 16</div>
+              <!-- Day 1: Mon 10 -->
+              <div class="portal-cal-day-col">
+                <div class="portal-cal-day-label">
+                  <span class="cal-day-name">Mon 10</span>
+                </div>
+                <div class="portal-cal-slot slot-completed">
+                  <span class="slot-status">Completed</span>
+                  <small class="slot-desc">Asana Clinic</small>
+                </div>
+              </div>
 
-              <div class="portal-cal-slot slot-completed">
-                <span class="slot-status">Completed</span>
-                <small class="slot-desc">Asana Clinic</small>
+              <!-- Day 2: Tue 11 -->
+              <div class="portal-cal-day-col">
+                <div class="portal-cal-day-label">
+                  <span class="cal-day-name">Tue 11</span>
+                </div>
+                <div class="portal-cal-slot slot-completed">
+                  <span class="slot-status">Completed</span>
+                  <small class="slot-desc">Hydro Bath</small>
+                </div>
               </div>
-              <div class="portal-cal-slot slot-completed">
-                <span class="slot-status">Completed</span>
-                <small class="slot-desc">Hydro Bath</small>
+
+              <!-- Day 3: Wed 12 -->
+              <div class="portal-cal-day-col">
+                <div class="portal-cal-day-label">
+                  <span class="cal-day-name">Wed 12</span>
+                </div>
+                <div class="portal-cal-slot slot-completed">
+                  <span class="slot-status">Completed</span>
+                  <small class="slot-desc">Aromatherapy</small>
+                </div>
               </div>
-              <div class="portal-cal-slot slot-completed">
-                <span class="slot-status">Completed</span>
-                <small class="slot-desc">Aromatherapy</small>
+
+              <!-- Day 4: Thu 13 (Today) -->
+              <div class="portal-cal-day-col is-today">
+                <div class="portal-cal-day-label active">
+                  <span class="cal-day-name">Thu 13</span>
+                  <span class="cal-day-badge">(Today)</span>
+                </div>
+                <div class="portal-cal-slot slot-today">
+                  <span class="slot-status">Rest Day</span>
+                  <small class="slot-desc">Walking Path</small>
+                </div>
               </div>
-              <div class="portal-cal-slot slot-today">
-                <span class="slot-status">Rest Day</span>
-                <small class="slot-desc">Walking Path</small>
+
+              <!-- Day 5: Fri 14 -->
+              <div class="portal-cal-day-col">
+                <div class="portal-cal-day-label">
+                  <span class="cal-day-name">Fri 14</span>
+                </div>
+                <div class="portal-cal-slot slot-upcoming">
+                  <span class="slot-status slot-time">09:30 AM</span>
+                  <small class="slot-desc">Studio 2 Shala</small>
+                </div>
               </div>
-              <div class="portal-cal-slot slot-upcoming">
-                <span class="slot-status slot-time">09:30 AM</span>
-                <small class="slot-desc">Studio 2 Shala</small>
+
+              <!-- Day 6: Sat 15 -->
+              <div class="portal-cal-day-col">
+                <div class="portal-cal-day-label">
+                  <span class="cal-day-name">Sat 15</span>
+                </div>
+                <div class="portal-cal-slot slot-upcoming">
+                  <span class="slot-status slot-time">02:00 PM</span>
+                  <small class="slot-desc">Hydro Suite B</small>
+                </div>
               </div>
-              <div class="portal-cal-slot slot-upcoming">
-                <span class="slot-status slot-time">02:00 PM</span>
-                <small class="slot-desc">Hydro Suite B</small>
-              </div>
-              <div class="portal-cal-slot slot-open">
-                <span class="slot-status">Open Shala</span>
-                <small class="slot-desc">Self Practice</small>
+
+              <!-- Day 7: Sun 16 -->
+              <div class="portal-cal-day-col is-last-day">
+                <div class="portal-cal-day-label">
+                  <span class="cal-day-name">Sun 16</span>
+                </div>
+                <div class="portal-cal-slot slot-open">
+                  <span class="slot-status">Open Shala</span>
+                  <small class="slot-desc">Self Practice</small>
+                </div>
               </div>
             </div>
           </div>
