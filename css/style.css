@@ -1665,7 +1665,7 @@ img {
 }
 
 .coverflow-meta {
-  color: var(--accent-sand);
+  color: #deb887;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1786,6 +1786,15 @@ img {
 [data-theme="dark"] .coverflow-card {
   border-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .coverflow-meta {
+  color: #fadbaf !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .coverflow-desc {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 [data-theme="dark"] .coverflow-nav-btn {
