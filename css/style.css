@@ -2271,9 +2271,10 @@ img {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .arch-thumbs-grid {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
   }
 
   .arch-title {
@@ -8761,6 +8762,10 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  .arch-thumbs-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
   .grid-2 {
     grid-template-columns: 1fr;
   }
