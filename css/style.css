@@ -4564,7 +4564,7 @@ img {
   font-family: 'Cinzel', serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--accent-sand);
+  color: #deb887;
   background: rgba(20, 11, 6, 0.75);
   backdrop-filter: blur(8px);
   padding: 0.5rem 0.85rem;
@@ -4646,7 +4646,7 @@ img {
   font-family: 'Cinzel', serif;
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--accent-sand);
+  color: #deb887;
 }
 
 .immersion-expanded-bottom {
@@ -4665,7 +4665,7 @@ img {
 
 .immersion-subtitle {
   font-size: 0.92rem;
-  color: var(--accent-sand);
+  color: #deb887;
   font-weight: 600;
   margin-bottom: 0.85rem;
 }
@@ -4788,6 +4788,21 @@ img {
 [data-theme="dark"] .immersion-panel.active {
   border-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .immersion-subtitle {
+  color: #fadbaf !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .immersion-seq,
+[data-theme="dark"] .collapsed-num {
+  color: #fadbaf !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .immersion-desc {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 /* RTL Support */
