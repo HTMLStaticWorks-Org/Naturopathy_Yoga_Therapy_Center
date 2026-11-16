@@ -6570,6 +6570,201 @@ body.portal-body {
   margin-top: 2.25rem;
 }
 
+/* Weekly Calendar Strip (dashboard.html) */
+.portal-calendar-strip {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 18px rgba(36, 22, 14, 0.04);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.portal-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.65rem;
+  text-align: center;
+  font-size: 0.82rem;
+  min-width: 540px;
+}
+
+.portal-cal-day-label {
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.portal-cal-day-label.active {
+  color: var(--accent-terracotta);
+}
+
+.portal-current-time {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-terracotta);
+}
+
+.portal-cal-slot {
+  padding: 0.85rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.portal-cal-slot .slot-status {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.portal-cal-slot .slot-desc {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  line-height: 1.25;
+}
+
+.portal-cal-slot.slot-completed {
+  background: var(--bg-cream);
+  border-color: var(--border-light);
+}
+
+.portal-cal-slot.slot-completed .slot-status {
+  color: #2e663a;
+}
+
+.portal-cal-slot.slot-today {
+  background: rgba(166, 88, 48, 0.12);
+  border: 2px solid var(--accent-terracotta);
+}
+
+.portal-cal-slot.slot-today .slot-status {
+  color: var(--accent-terracotta);
+}
+
+.portal-cal-slot.slot-today .slot-desc {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.portal-cal-slot.slot-upcoming {
+  background: var(--bg-surface);
+  border-color: var(--border-medium);
+}
+
+.portal-cal-slot.slot-upcoming .slot-time {
+  color: var(--primary-walnut);
+}
+
+.portal-cal-slot.slot-open {
+  background: var(--bg-cream);
+  border-color: var(--border-light);
+}
+
+.portal-cal-slot.slot-open .slot-status {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Dark Mode Overrides for Weekly Calendar Strip */
+[data-theme="dark"] .portal-calendar-strip {
+  background: #1c140e !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .portal-current-time {
+  color: #f5a878 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .portal-cal-day-label {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+[data-theme="dark"] .portal-cal-day-label.active {
+  color: #f5a878 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .portal-cal-slot {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-theme="dark"] .portal-cal-slot .slot-desc {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-completed {
+  background: rgba(46, 102, 58, 0.25) !important;
+  border-color: rgba(72, 187, 120, 0.4) !important;
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-completed .slot-status {
+  color: #68d391 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-completed .slot-desc {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-today {
+  background: rgba(166, 88, 48, 0.3) !important;
+  border: 2px solid #e07a48 !important;
+  box-shadow: 0 0 14px rgba(224, 122, 72, 0.25) !important;
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-today .slot-status {
+  color: #ffb088 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-today .slot-desc {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-upcoming {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-upcoming .slot-time {
+  color: #fadbaf !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-upcoming .slot-desc {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-open {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-open .slot-status {
+  color: #fadbaf !important;
+}
+
+[data-theme="dark"] .portal-cal-slot.slot-open .slot-desc {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
 /* Dark Table Card */
 .portal-table-card {
   background: #ffffff;

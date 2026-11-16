@@ -596,27 +596,48 @@
               <h2 class="portal-section-title">Section 1: Weekly Sanctuary Session Ledger</h2>
               <p class="portal-section-sub">Week 3 active schedule (November 10 – November 16, 2026).</p>
             </div>
-            <span style="font-size: 0.8rem; font-weight: 700; color: #a65830;">Current Time: 04:10 PM</span>
+            <span class="portal-current-time">Current Time: 04:10 PM</span>
           </div>
 
           <!-- Calendar Strip -->
-          <div style="background: #ffffff; border: 1px solid var(--border-light); border-radius: 14px; padding: 1.25rem; margin-bottom: 1.5rem; box-shadow: 0 4px 18px rgba(36, 22, 14, 0.04);">
-            <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.65rem; text-align: center; font-size: 0.82rem;">
-              <div style="font-weight: 700; color: var(--text-muted);">Mon 10</div>
-              <div style="font-weight: 700; color: var(--text-muted);">Tue 11</div>
-              <div style="font-weight: 700; color: var(--text-muted);">Wed 12</div>
-              <div style="font-weight: 700; color: #a65830;">Thu 13 (Today)</div>
-              <div style="font-weight: 700; color: var(--text-muted);">Fri 14</div>
-              <div style="font-weight: 700; color: var(--text-muted);">Sat 15</div>
-              <div style="font-weight: 700; color: var(--text-muted);">Sun 16</div>
+          <div class="portal-calendar-strip">
+            <div class="portal-calendar-grid">
+              <div class="portal-cal-day-label">Mon 10</div>
+              <div class="portal-cal-day-label">Tue 11</div>
+              <div class="portal-cal-day-label">Wed 12</div>
+              <div class="portal-cal-day-label active">Thu 13 (Today)</div>
+              <div class="portal-cal-day-label">Fri 14</div>
+              <div class="portal-cal-day-label">Sat 15</div>
+              <div class="portal-cal-day-label">Sun 16</div>
 
-              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: #2e663a; font-weight:700;">Completed</span><br><small>Asana Clinic</small></div>
-              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: #2e663a; font-weight:700;">Completed</span><br><small>Hydro Bath</small></div>
-              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: #2e663a; font-weight:700;">Completed</span><br><small>Aromatherapy</small></div>
-              <div style="padding: 0.85rem; background: rgba(166, 88, 48, 0.12); border: 2px solid #a65830; border-radius: 8px; font-weight: 700;"><span style="color: #a65830;">Rest Day</span><br><small>Walking Path</small></div>
-              <div style="padding: 0.85rem; background: #ffffff; border-radius: 8px; border: 1px solid var(--border-medium);"><span style="color: #4a2e1b; font-weight:700;">09:30 AM</span><br><small>Studio 2 Shala</small></div>
-              <div style="padding: 0.85rem; background: #ffffff; border-radius: 8px; border: 1px solid var(--border-medium);"><span style="color: #4a2e1b; font-weight:700;">02:00 PM</span><br><small>Hydro Suite B</small></div>
-              <div style="padding: 0.85rem; background: var(--bg-cream); border-radius: 8px; border: 1px solid var(--border-light);"><span style="color: var(--text-muted); font-weight:600;">Open Shala</span><br><small>Self Practice</small></div>
+              <div class="portal-cal-slot slot-completed">
+                <span class="slot-status">Completed</span>
+                <small class="slot-desc">Asana Clinic</small>
+              </div>
+              <div class="portal-cal-slot slot-completed">
+                <span class="slot-status">Completed</span>
+                <small class="slot-desc">Hydro Bath</small>
+              </div>
+              <div class="portal-cal-slot slot-completed">
+                <span class="slot-status">Completed</span>
+                <small class="slot-desc">Aromatherapy</small>
+              </div>
+              <div class="portal-cal-slot slot-today">
+                <span class="slot-status">Rest Day</span>
+                <small class="slot-desc">Walking Path</small>
+              </div>
+              <div class="portal-cal-slot slot-upcoming">
+                <span class="slot-status slot-time">09:30 AM</span>
+                <small class="slot-desc">Studio 2 Shala</small>
+              </div>
+              <div class="portal-cal-slot slot-upcoming">
+                <span class="slot-status slot-time">02:00 PM</span>
+                <small class="slot-desc">Hydro Suite B</small>
+              </div>
+              <div class="portal-cal-slot slot-open">
+                <span class="slot-status">Open Shala</span>
+                <small class="slot-desc">Self Practice</small>
+              </div>
             </div>
           </div>
 
