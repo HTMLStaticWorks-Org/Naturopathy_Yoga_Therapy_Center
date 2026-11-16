@@ -2280,6 +2280,33 @@ img {
   .arch-title {
     font-size: 1.5rem;
   }
+
+  /* Same Size & Center Alignment for 2 buttons in Architecture Detail Card */
+  .arch-card-footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+    margin-top: 1.25rem !important;
+  }
+
+  .arch-card-footer .btn {
+    width: 100% !important;
+    max-width: 320px !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    border-radius: var(--radius-full) !important;
+    padding: 0.7rem 1.5rem !important;
+    font-size: 0.92rem !important;
+    font-weight: 600 !important;
+    box-sizing: border-box !important;
+  }
 }
 
 /* ==========================================================================
@@ -2916,7 +2943,7 @@ img {
 }
 
 .fanned-card-meta {
-  color: var(--accent-sand);
+  color: #deb887;
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3187,6 +3214,21 @@ img {
 [data-theme="dark"] .fanned-milestone-pill {
   background-color: var(--bg-surface);
   border-color: var(--border-light);
+}
+
+[data-theme="dark"] .fanned-card-meta {
+  color: #fadbaf !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .fanned-card-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .fanned-card-insight {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* RTL Support */
@@ -9260,7 +9302,26 @@ textarea.form-control {
 
   .hero-h2-actions {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-h2-actions .btn {
+    width: 100% !important;
+    max-width: 320px !important;
+    min-height: 48px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    border-radius: var(--radius-full) !important;
+    box-sizing: border-box !important;
+    padding: 0.7rem 1.5rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
   }
 
   .hero-h2-trust {
@@ -9922,7 +9983,9 @@ textarea.form-control {
   .fanned-card-actions,
   .circadian-actions,
   .immersion-actions,
-  .specialist-dcard-actions {
+  .specialist-dcard-actions,
+  .arch-card-footer,
+  .hero-h2-actions {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -9941,10 +10004,12 @@ textarea.form-control {
   .circadian-actions .btn,
   .immersion-actions .btn,
   .immersion-actions .immersion-btn-primary,
-  .specialist-dcard-actions .specialist-btn-book {
+  .specialist-dcard-actions .specialist-btn-book,
+  .arch-card-footer .btn,
+  .hero-h2-actions .btn {
     width: 100% !important;
     max-width: 320px !important;
-    min-height: 46px !important;
+    min-height: 48px !important;
     margin: 0 auto !important;
     display: flex !important;
     align-items: center !important;
@@ -9952,7 +10017,7 @@ textarea.form-control {
     text-align: center !important;
     box-sizing: border-box !important;
     padding: 0.65rem 1.25rem !important;
-    font-size: 0.88rem !important;
+    font-size: 0.92rem !important;
     font-weight: 600 !important;
     border-radius: var(--radius-full) !important;
   }
