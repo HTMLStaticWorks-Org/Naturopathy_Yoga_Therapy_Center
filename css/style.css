@@ -1525,12 +1525,59 @@ img {
     font-size: 1.45rem;
   }
 
+  /* Keep side arrows vertically centered on media image to prevent overlapping with text */
+  .sig-nav-btn {
+    top: 130px !important;
+    transform: translateY(-50%) !important;
+    width: 44px !important;
+    height: 44px !important;
+    box-shadow: 0 4px 16px rgba(36, 22, 14, 0.2) !important;
+  }
+
   .sig-prev-btn {
-    left: 2px;
+    left: 14px !important;
   }
 
   .sig-next-btn {
-    right: 2px;
+    right: 14px !important;
+  }
+
+  [dir="rtl"] .sig-prev-btn {
+    left: auto !important;
+    right: 14px !important;
+    transform: translateY(-50%) scaleX(-1) !important;
+  }
+
+  [dir="rtl"] .sig-next-btn {
+    right: auto !important;
+    left: 14px !important;
+    transform: translateY(-50%) scaleX(-1) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sig-nav-btn {
+    top: 130px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .sig-prev-btn {
+    left: 8px !important;
+  }
+
+  .sig-next-btn {
+    right: 8px !important;
+  }
+
+  [dir="rtl"] .sig-prev-btn {
+    left: auto !important;
+    right: 8px !important;
+  }
+
+  [dir="rtl"] .sig-next-btn {
+    right: auto !important;
+    left: 8px !important;
   }
 }
 
@@ -2563,12 +2610,33 @@ img {
     font-size: 1.65rem;
   }
 
+  /* Keep side arrows vertically centered on media image to prevent overlapping with text */
+  .nat-nav-btn {
+    top: 120px !important;
+    transform: translateY(-50%) !important;
+    width: 44px !important;
+    height: 44px !important;
+    box-shadow: 0 4px 16px rgba(36, 22, 14, 0.2) !important;
+  }
+
   .nat-prev-btn {
-    left: 4px;
+    left: 14px !important;
   }
 
   .nat-next-btn {
-    right: 4px;
+    right: 14px !important;
+  }
+
+  [dir="rtl"] .nat-prev-btn {
+    left: auto !important;
+    right: 14px !important;
+    transform: translateY(-50%) scaleX(-1) !important;
+  }
+
+  [dir="rtl"] .nat-next-btn {
+    right: auto !important;
+    left: 14px !important;
+    transform: translateY(-50%) scaleX(-1) !important;
   }
 
   .nat-slide-actions {
@@ -7604,26 +7672,33 @@ body.portal-body {
     margin-top: 0.5rem;
   }
 
+  /* Keep side arrows vertically centered on media image to prevent overlapping with text */
+  .reflection-nav-btn {
+    top: 130px !important;
+    transform: translateY(-50%) !important;
+    width: 42px !important;
+    height: 42px !important;
+    box-shadow: 0 4px 16px rgba(36, 22, 14, 0.2) !important;
+  }
+
   .reflection-prev-btn {
-    left: -8px;
-    width: 40px;
-    height: 40px;
+    left: 14px !important;
   }
 
   .reflection-next-btn {
-    right: -8px;
-    width: 40px;
-    height: 40px;
+    right: 14px !important;
   }
 
   [dir="rtl"] .reflection-prev-btn {
-    right: -8px;
-    left: auto;
+    right: 14px !important;
+    left: auto !important;
+    transform: translateY(-50%) scaleX(-1) !important;
   }
 
   [dir="rtl"] .reflection-next-btn {
-    left: -8px;
-    right: auto;
+    left: 14px !important;
+    right: auto !important;
+    transform: translateY(-50%) scaleX(-1) !important;
   }
 }
 
