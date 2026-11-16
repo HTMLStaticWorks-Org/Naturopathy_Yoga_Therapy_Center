@@ -6571,10 +6571,11 @@ body.portal-body {
 .portal-eval-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 0.75rem;
+  align-items: flex-start;
+  gap: 0.5rem 1rem;
   margin-bottom: 0.75rem;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .portal-eval-title {
@@ -6657,6 +6658,31 @@ body.portal-body {
   color: #f5a878 !important;
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive One-by-One Alignment for Evaluation Header on All Mobile Views */
+@media (max-width: 768px) {
+  .portal-eval-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.35rem !important;
+    width: 100% !important;
+  }
+
+  .portal-eval-title {
+    width: 100% !important;
+    display: block !important;
+    font-size: 1.05rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .portal-eval-date {
+    width: 100% !important;
+    display: block !important;
+    font-size: 0.78rem !important;
+    margin-top: 0.15rem !important;
+    white-space: normal !important;
+  }
 }
 
 /* General Info Cards inside .portal-breakdown-card (Arrival Protocols, Botanical Brews, Triage Directory) */
@@ -7150,6 +7176,28 @@ body.portal-body {
   .portal-current-time {
     font-size: 0.78rem !important;
     margin-top: 0.15rem !important;
+  }
+
+  .portal-eval-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.35rem !important;
+    width: 100% !important;
+  }
+
+  .portal-eval-title {
+    width: 100% !important;
+    display: block !important;
+    font-size: 1.05rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .portal-eval-date {
+    width: 100% !important;
+    display: block !important;
+    font-size: 0.78rem !important;
+    margin-top: 0.15rem !important;
+    white-space: normal !important;
   }
 }
 
