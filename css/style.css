@@ -8320,8 +8320,13 @@ textarea.form-control {
   padding: 0 clamp(1.25rem, 3vw, 2.5rem);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   z-index: 25;
+  box-sizing: border-box;
+}
+
+[dir="rtl"] .auth-header-bar {
+  justify-content: flex-start;
 }
 
 .auth-card {
