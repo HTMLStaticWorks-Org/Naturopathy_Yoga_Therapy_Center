@@ -4820,7 +4820,7 @@ img {
 @media (max-width: 992px) {
   .immersion-accordion-stage {
     flex-direction: column;
-    height: auto;
+    height: auto !important;
     gap: 1rem;
   }
   .immersion-panel {
@@ -4828,8 +4828,64 @@ img {
     height: 100px;
   }
   .immersion-panel.active {
-    height: auto;
-    min-height: 480px;
+    height: auto !important;
+    min-height: auto !important;
+    overflow: hidden !important;
+  }
+  .immersion-panel.active .immersion-panel-media {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1 !important;
+  }
+  .immersion-panel.active .immersion-panel-overlay {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100% !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    padding: 1.75rem 1.5rem !important;
+    box-sizing: border-box !important;
+  }
+  .immersion-panel.active .immersion-expanded-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    height: auto !important;
+    gap: 1.25rem !important;
+  }
+  .immersion-expanded-top {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .immersion-tag-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    line-height: 1.35 !important;
+  }
+  .immersion-seq {
+    display: inline-block !important;
+    letter-spacing: 0.05em !important;
+  }
+  .immersion-expanded-bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
   }
   .immersion-panel:not(.active) .immersion-panel-overlay {
     padding: 0.85rem 1.15rem;
@@ -4888,7 +4944,11 @@ img {
     height: 94px;
   }
   .immersion-panel.active {
-    min-height: 520px;
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .immersion-panel.active .immersion-panel-overlay {
+    padding: 1.5rem 1.15rem !important;
   }
   .immersion-panel:not(.active) .immersion-panel-overlay {
     padding: 0.75rem 1rem;
@@ -4921,6 +4981,13 @@ img {
 @media (max-width: 480px) {
   .immersion-panel {
     height: 88px;
+  }
+  .immersion-panel.active {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .immersion-panel.active .immersion-panel-overlay {
+    padding: 1.25rem 1rem !important;
   }
   .immersion-panel:not(.active) .immersion-panel-overlay {
     padding: 0.65rem 0.85rem;
@@ -9960,6 +10027,17 @@ textarea.form-control {
   .specialist-nav-bar .specialist-nav-chip:active,
   .fanned-control-dock .fanned-milestone-pill:active {
     transform: scale(0.98);
+  }
+
+  /* Signature Page: One-by-One Alignment for Immersion Heading Text on Mobile */
+  .immersion-expanded-top {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    margin-bottom: 0.75rem !important;
   }
 
   /* Same Box Size for Activity & Tag Pill Buttons on Mobile across all pages */
